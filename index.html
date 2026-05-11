@@ -133,7 +133,12 @@
       height: var(--nav-h);
       gap: 1rem;
     }
-    .logo { flex-shrink: 0; line-height: 1.15; }
+    .logo { flex-shrink: 0; line-height: 1.15; display: flex; align-items: center; gap: 0.6rem; }
+    .logo-img {
+      height: 42px;
+      width: auto;
+      border-radius: 6px;
+    }
     .logo-primary {
       font-family: 'Playfair Display', serif;
       font-size: 1.3rem;
@@ -228,22 +233,11 @@
     .hero-wordmark {
       margin-bottom: 1.5rem;
     }
-    .hero-wordmark-i5 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(4.5rem, 12vw, 8.5rem);
-      font-weight: 700;
-      color: var(--gold);
-      line-height: 1;
-      letter-spacing: -3px;
-    }
-    .hero-wordmark-name {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(0.9rem, 2.5vw, 1.4rem);
-      font-weight: 400;
-      color: var(--silver-lt);
-      letter-spacing: 8px;
-      text-transform: uppercase;
-      margin-top: 0.35rem;
+    .hero-logo-img {
+      width: clamp(240px, 50vw, 380px);
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 48px rgba(201,168,76,0.2);
     }
     .hero-tagline {
       font-family: 'Playfair Display', serif;
@@ -1041,8 +1035,11 @@
 <header class="header" id="header">
   <nav class="nav container">
     <a href="#home" class="logo">
-      <div class="logo-primary">I-5 Cleaning LLC</div>
-      <div class="logo-secondary">Longview, WA</div>
+      <img src="logo.png" alt="I-5 Cleaning LLC" class="logo-img" />
+      <div>
+        <div class="logo-primary">I-5 Cleaning LLC</div>
+        <div class="logo-secondary">Longview, WA</div>
+      </div>
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
@@ -1066,8 +1063,7 @@
     Now Accepting Clients — Longview &amp; Kelso, WA
   </div>
   <div class="hero-wordmark">
-    <div class="hero-wordmark-i5">I-5</div>
-    <div class="hero-wordmark-name">Cleaning LLC</div>
+    <img src="logo.png" alt="I-5 Cleaning LLC" class="hero-logo-img" />
   </div>
   <p class="hero-tagline">Clean Spaces. High Standards.</p>
   <div class="hero-rule"></div>
@@ -1591,9 +1587,12 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div>
-          <div class="logo-primary">I-5 Cleaning LLC</div>
-          <div class="logo-secondary" style="margin-top:0.2rem;">Clean Spaces. High Standards.</div>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <img src="logo.png" alt="I-5 Cleaning LLC" style="height:48px;width:auto;border-radius:6px;" />
+          <div>
+            <div class="logo-primary">I-5 Cleaning LLC</div>
+            <div class="logo-secondary" style="margin-top:0.2rem;">Clean Spaces. High Standards.</div>
+          </div>
         </div>
         <p>Locally owned and operated in Longview, WA.<br />Licensed · Bonded · Insured · UBI 606-215-365</p>
       </div>
