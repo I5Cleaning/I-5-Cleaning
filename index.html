@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I-5 Cleaning | Professional Cleaning Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">I-5 Cleaning</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#calculator">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary nav__cta">Get a Quote</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__content container">
+      <h1 class="hero__title">A Cleaner Space,<br />A Better Day</h1>
+      <p class="hero__subtitle">Professional cleaning services for homes and businesses along the I-5 corridor. Reliable, thorough, and trusted.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Get a Free Quote</a>
+        <a href="#services" class="btn btn--outline btn--lg">Our Services</a>
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="section__title">Our Services</h2>
+      <p class="section__subtitle">We offer a full range of cleaning solutions tailored to your needs.</p>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">🏠</div>
+          <h3>Residential Cleaning</h3>
+          <p>Regular or one-time deep cleans for homes of all sizes. We handle kitchens, bathrooms, bedrooms, and living areas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🏢</div>
+          <h3>Commercial Cleaning</h3>
+          <p>Keep your office or business spotless. We work around your schedule to minimize disruption.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">✨</div>
+          <h3>Deep Cleaning</h3>
+          <p>A thorough top-to-bottom clean ideal for move-ins, move-outs, or seasonal refreshes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🪟</div>
+          <h3>Window Cleaning</h3>
+          <p>Crystal-clear windows inside and out. Streak-free results every time.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">🛋️</div>
+          <h3>Carpet & Upholstery</h3>
+          <p>Remove stains, odors, and allergens from carpets, rugs, and furniture.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">📦</div>
+          <h3>Move-In / Move-Out</h3>
+          <p>Leave your old place spotless or start fresh in your new one. We cover every corner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <h2 class="section__title">About I-5 Cleaning</h2>
+        <p>We're a locally owned cleaning company serving communities along the I-5 corridor. Our team is fully insured, background-checked, and trained to deliver consistent, high-quality results.</p>
+        <p>We use eco-friendly products that are safe for your family, pets, and the environment — without compromising on clean.</p>
+        <ul class="about__list">
+          <li>✔ Fully insured &amp; bonded</li>
+          <li>✔ Background-checked staff</li>
+          <li>✔ Eco-friendly products</li>
+          <li>✔ Satisfaction guaranteed</li>
+          <li>✔ Flexible scheduling</li>
+        </ul>
+      </div>
+      <div class="about__visual">
+        <div class="about__badge">
+          <span class="about__badge-number">100%</span>
+          <span class="about__badge-label">Satisfaction Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Calculator -->
+  <section class="section calculator" id="calculator">
+    <div class="container">
+      <h2 class="section__title">Instant Price Estimate</h2>
+      <p class="section__subtitle">Answer a few quick questions to get a ballpark quote.</p>
+      <div class="calc__card">
+        <form class="calc__form" id="calc-form">
+          <div class="calc__row">
+            <div class="form__group">
+              <label for="calc-service">Service Type</label>
+              <select id="calc-service" name="calc-service">
+                <option value="">Select a service...</option>
+                <option value="residential">Residential Cleaning</option>
+                <option value="commercial">Commercial Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="windows">Window Cleaning</option>
+                <option value="carpet">Carpet &amp; Upholstery</option>
+                <option value="move">Move-In / Move-Out</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="calc-size">Space Size</label>
+              <select id="calc-size" name="calc-size">
+                <option value="">Select size...</option>
+                <option value="small">Small (up to 1,000 sq ft)</option>
+                <option value="medium">Medium (1,000–2,500 sq ft)</option>
+                <option value="large">Large (2,500+ sq ft)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="calc-frequency">Frequency</label>
+              <select id="calc-frequency" name="calc-frequency">
+                <option value="">Select frequency...</option>
+                <option value="once">One-time</option>
+                <option value="weekly">Weekly (save 15%)</option>
+                <option value="biweekly">Bi-weekly (save 10%)</option>
+                <option value="monthly">Monthly (save 5%)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label>Add-ons</label>
+            <div class="calc__extras">
+              <label class="calc__extra-label">
+                <input type="checkbox" class="calc-extra" data-price="40" />
+                Inside oven cleaning (+$40)
+              </label>
+              <label class="calc__extra-label">
+                <input type="checkbox" class="calc-extra" data-price="30" />
+                Inside fridge cleaning (+$30)
+              </label>
+              <label class="calc__extra-label">
+                <input type="checkbox" class="calc-extra" data-price="50" />
+                Interior windows (+$50)
+              </label>
+              <label class="calc__extra-label">
+                <input type="checkbox" class="calc-extra" data-price="35" />
+                Laundry (wash &amp; fold) (+$35)
+              </label>
+            </div>
+          </div>
+        </form>
+        <div class="calc__result" id="calc-result">
+          <div class="calc__result-inner">
+            <span class="calc__label">Estimated starting price</span>
+            <span class="calc__price" id="calc-price">$0</span>
+            <p class="calc__note">Final price may vary based on actual conditions. <a href="#contact">Contact us</a> for an exact quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title">Get in Touch</h2>
+      <p class="section__subtitle">Ready for a cleaner space? Reach out and we'll get back to you promptly.</p>
+      <div class="contact__inner">
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+15555550100">(555) 555-0100</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hello@i5cleaning.com">hello@i5cleaning.com</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Sat: 8am – 6pm</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contact-form">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
+          </div>
+          <div class="form__group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="residential">Residential Cleaning</option>
+              <option value="commercial">Commercial Cleaning</option>
+              <option value="deep">Deep Cleaning</option>
+              <option value="windows">Window Cleaning</option>
+              <option value="carpet">Carpet &amp; Upholstery</option>
+              <option value="move">Move-In / Move-Out</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your space and what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form__success" id="form-success">Thanks! We'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="nav__logo">I-5 Cleaning</span>
+      <p>&copy; 2026 I-5 Cleaning. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
