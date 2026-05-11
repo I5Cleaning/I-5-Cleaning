@@ -3,60 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I-5 Cleaning LLC | Clean Spaces. High Standards.</title>
+  <title>I-5 Cleaning | Premium Residential &amp; Commercial Cleaning in Longview, WA</title>
+  <meta name="description" content="Locally owned cleaning services in Longview and Kelso, WA. Recurring home cleans, commercial cleaning, restaurant deep cleans. Licensed, bonded, and insured. Same crew every visit." />
+  <meta name="keywords" content="cleaning service Longview WA, house cleaning Longview, commercial cleaning Kelso, restaurant cleaning Longview, maid service Longview Washington" />
+  <meta name="author" content="I-5 Cleaning LLC" />
+  <link rel="canonical" href="https://i5cleaning.github.io/I-5-Cleaning/" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="I-5 Cleaning | Premium Cleaning in Longview, WA" />
+  <meta property="og:description" content="Locally owned cleaning services in Longview and Kelso, WA. Licensed, bonded, insured. Same crew every visit." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:url" content="https://i5cleaning.github.io/I-5-Cleaning/" />
+  <meta property="og:site_name" content="I-5 Cleaning LLC" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="I-5 Cleaning | Premium Cleaning in Longview, WA" />
+  <meta name="twitter:description" content="Locally owned cleaning services in Longview and Kelso, WA." />
+  <meta name="twitter:image" content="logo.png" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "I-5 Cleaning LLC",
+    "description": "Premium residential and commercial cleaning services in Longview, WA",
+    "url": "https://i5cleaning.github.io/I-5-Cleaning/",
+    "telephone": "+13608228539",
+    "email": "gunner@i5cleaning.com",
+    "founder": "Gunner Skolrud",
+    "foundingDate": "2026",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Longview",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.1382,
+      "longitude": -122.9382
+    },
+    "areaServed": ["Longview WA","Kelso WA","Castle Rock WA","Kalama WA","Cathlamet WA","Cowlitz County WA"],
+    "priceRange": "$$",
+    "hasCredential": ["Licensed","Bonded","Insured"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/share/1B7R2uLakz/?mibextid=wwXIfr",
+      "https://www.instagram.com/i5cleaning"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
   <style>
-    /* ===== VARIABLES ===== */
+    /* ============================================================
+       VARIABLES
+    ============================================================ */
     :root {
-      --black:     #080808;
-      --black-soft:#0f0f0f;
-      --black-card:#141414;
-      --black-el:  #1c1c1c;
-      --gold:      #C9A84C;
-      --gold-dark: #a88a38;
-      --gold-glow: rgba(201,168,76,0.12);
-      --silver:    #8A9BA8;
-      --silver-lt: #b5c4ce;
-      --white:     #f0f0f0;
-      --text:      #d8d8d8;
-      --muted:     #6a7a86;
-      --border:    rgba(201,168,76,0.2);
-      --border-s:  rgba(138,155,168,0.15);
-      --radius:    12px;
-      --radius-s:  8px;
-      --trans:     0.25s ease;
-      --nav-h:     70px;
+      --bg:       #0D0D0D;
+      --bg2:      #1A1A1A;
+      --bg3:      #252525;
+      --gold:     #C9A84C;
+      --gold-lt:  #E8D5A3;
+      --gold-dk:  #9A7A2E;
+      --silver:   #8A9BA8;
+      --silver-lt:#C0CDD6;
+      --tp:       #F0EDE8;
+      --ts:       #B8B4AE;
+      --tm:       #7A7570;
+      --success:  #2ECC8A;
+      --warn:     #F0A500;
+      --border:   rgba(201,168,76,0.18);
+      --border-s: rgba(138,155,168,0.15);
+      --glow:     rgba(201,168,76,0.12);
+      --radius:   14px;
+      --radius-s: 8px;
+      --trans:    0.28s ease;
+      --nav-h:    74px;
     }
 
-    /* ===== RESET ===== */
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; font-size: 16px; }
     body {
       font-family: 'DM Sans', sans-serif;
-      background: var(--black);
-      color: var(--text);
+      background: var(--bg);
+      color: var(--tp);
       line-height: 1.65;
       overflow-x: hidden;
     }
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
+    img { max-width: 100%; display: block; }
     button { font-family: inherit; cursor: pointer; }
+    input, select, textarea { font-family: inherit; }
 
-    /* ===== LAYOUT ===== */
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
-    .section { padding: 6rem 0; }
-    .section--alt { background: var(--black-soft); }
-    .text-center { text-align: center; }
-    .text-center .section-sub { margin-left: auto; margin-right: auto; }
+    /* ============================================================
+       UTILITIES
+    ============================================================ */
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 5.5rem 0; }
+    .section-alt { background: var(--bg2); }
+    .tc { text-align: center; }
+    .tc .section-sub { margin-left: auto; margin-right: auto; }
 
-    /* ===== TYPOGRAPHY ===== */
-    .section-eyebrow {
+    .eyebrow {
       display: inline-block;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 2.5px;
+      letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 0.75rem;
@@ -65,89 +134,124 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.8rem, 3.5vw, 2.6rem);
       font-weight: 700;
-      color: var(--white);
+      color: var(--tp);
       line-height: 1.2;
-      margin-bottom: 1rem;
+      margin-bottom: 0.9rem;
     }
     .section-sub {
       font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 560px;
+      color: var(--tm);
+      max-width: 600px;
       margin-bottom: 3rem;
+      line-height: 1.75;
     }
+    .gold-text { color: var(--gold); }
 
-    /* ===== BUTTONS ===== */
+    /* Divider */
+    .gold-rule {
+      width: 56px;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), transparent);
+      margin: 1.25rem 0;
+    }
+    .gold-rule.center { margin-left: auto; margin-right: auto; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-      padding: 0.85rem 2rem;
+      padding: 0.9rem 2.1rem;
       border-radius: var(--radius-s);
       font-size: 0.95rem;
       font-weight: 600;
+      letter-spacing: 0.5px;
       border: 1.5px solid transparent;
       transition: all var(--trans);
       white-space: nowrap;
+      cursor: pointer;
     }
-    .btn--gold {
+    .btn-gold {
       background: var(--gold);
-      color: #000;
+      color: #0D0D0D;
       border-color: var(--gold);
     }
-    .btn--gold:hover {
-      background: #dbb94e;
-      border-color: #dbb94e;
+    .btn-gold:hover {
+      background: var(--gold-lt);
+      border-color: var(--gold-lt);
       transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(201,168,76,0.3);
+      box-shadow: 0 8px 28px rgba(201,168,76,0.35);
     }
-    .btn--ghost {
+    .btn-silver {
+      background: transparent;
+      color: var(--silver-lt);
+      border-color: var(--silver);
+    }
+    .btn-silver:hover {
+      background: rgba(138,155,168,0.1);
+      border-color: var(--silver-lt);
+      transform: translateY(-2px);
+    }
+    .btn-ghost {
       background: transparent;
       color: var(--gold);
       border-color: var(--gold);
     }
-    .btn--ghost:hover {
-      background: var(--gold-glow);
+    .btn-ghost:hover {
+      background: var(--glow);
       transform: translateY(-2px);
     }
-    .btn--lg { padding: 1rem 2.5rem; font-size: 1rem; }
-    .btn--full { width: 100%; }
+    .btn-lg { padding: 1.1rem 2.6rem; font-size: 1.05rem; }
+    .btn-full { width: 100%; }
+    .btn-sm { padding: 0.6rem 1.4rem; font-size: 0.875rem; }
 
-    /* ===== HEADER ===== */
+    /* ============================================================
+       HEADER / NAV
+    ============================================================ */
     .header {
       position: fixed;
-      inset: 0 0 auto 0;
+      inset: 0 0 auto;
       height: var(--nav-h);
-      z-index: 900;
-      transition: background var(--trans), border-color var(--trans);
+      z-index: 1000;
+      transition: background var(--trans), border-color var(--trans), backdrop-filter var(--trans);
       border-bottom: 1px solid transparent;
     }
     .header.scrolled {
-      background: rgba(8,8,8,0.95);
-      backdrop-filter: blur(16px);
-      border-color: var(--border-s);
+      background: rgba(13,13,13,0.95);
+      backdrop-filter: blur(20px);
+      border-color: var(--border);
     }
     .nav {
       display: flex;
       align-items: center;
       height: var(--nav-h);
-      gap: 1rem;
+      gap: 1.5rem;
     }
-    .logo { flex-shrink: 0; line-height: 1.15; display: flex; align-items: center; gap: 0.6rem; }
-    .logo-img {
-      height: 42px;
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+    .nav-logo-img {
+      height: 40px;
       width: auto;
       border-radius: 6px;
+      background: #fff;
+      padding: 2px 3px;
     }
-    .logo-primary {
+    .nav-logo-text { line-height: 1.15; }
+    .nav-logo-name {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--gold);
     }
-    .logo-secondary {
-      font-size: 0.6rem;
-      font-weight: 500;
+    .nav-logo-sub {
+      font-size: 0.58rem;
       letter-spacing: 2.5px;
       text-transform: uppercase;
       color: var(--silver);
@@ -155,17 +259,18 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1.75rem;
       margin-left: auto;
     }
     .nav-links a {
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       font-weight: 500;
-      color: var(--silver);
+      color: var(--ts);
+      letter-spacing: 0.2px;
       transition: color var(--trans);
     }
     .nav-links a:hover { color: var(--gold); }
-    .nav-cta { margin-left: 0.5rem; }
+    .nav-cta { flex-shrink: 0; }
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -179,101 +284,144 @@
       display: block;
       width: 22px;
       height: 2px;
-      background: var(--silver);
+      background: var(--ts);
       border-radius: 2px;
       transition: all var(--trans);
     }
 
-    /* ===== HERO ===== */
+    /* ============================================================
+       HERO
+    ============================================================ */
     .hero {
       position: relative;
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: calc(var(--nav-h) + 3rem) 1.5rem 5rem;
       overflow: hidden;
     }
-    .hero::before {
-      content: '';
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('logo.png');
+      background-size: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.025;
+      pointer-events: none;
+    }
+    .hero-glow {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 90% 60% at 50% 0%, rgba(201,168,76,0.07) 0%, transparent 65%),
-        radial-gradient(ellipse 60% 50% at 20% 100%, rgba(138,155,168,0.04) 0%, transparent 60%);
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(201,168,76,0.08) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(138,155,168,0.04) 0%, transparent 60%);
       pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      width: 100%;
+    }
+    .hero-logo-card {
+      display: inline-block;
+      background: linear-gradient(145deg, #ffffff, #f5f0e8);
+      border-radius: 20px;
+      padding: 1.5rem 2.25rem;
+      border: 1px solid rgba(201,168,76,0.45);
+      box-shadow:
+        0 0 0 1px rgba(201,168,76,0.08),
+        0 24px 64px rgba(0,0,0,0.55),
+        0 0 80px rgba(201,168,76,0.18);
+      margin-bottom: 2.25rem;
+    }
+    .hero-logo-card img {
+      width: clamp(220px, 42vw, 360px);
+      height: auto;
     }
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.55rem;
+      gap: 0.5rem;
       background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.28);
+      border: 1px solid rgba(201,168,76,0.3);
       border-radius: 100px;
       padding: 0.4rem 1.1rem;
       font-size: 0.78rem;
       font-weight: 600;
       color: var(--gold);
-      letter-spacing: 0.2px;
-      margin-bottom: 2.5rem;
-    }
-    .hero-badge-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--gold);
-      animation: dot-pulse 2s ease infinite;
-    }
-    @keyframes dot-pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.75); }
-    }
-    .hero-wordmark {
       margin-bottom: 1.5rem;
     }
-    .hero-logo-img {
-      width: clamp(240px, 50vw, 380px);
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 8px 48px rgba(201,168,76,0.2);
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse 2s ease infinite;
     }
+    @keyframes pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50% { opacity:0.4; transform:scale(0.75); }
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--tp);
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+    .hero h1 span { color: var(--gold); }
     .hero-tagline {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.05rem, 2.5vw, 1.45rem);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
       font-style: italic;
       color: var(--silver-lt);
       margin-bottom: 0.75rem;
     }
-    .hero-rule {
-      width: 56px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--gold), transparent);
-      margin: 1.5rem auto;
-    }
-    .hero-location {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 2.5rem;
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--ts);
+      margin-bottom: 2rem;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .hero-launch {
-      background: linear-gradient(135deg, rgba(201,168,76,0.13), rgba(201,168,76,0.04));
-      border: 1px solid rgba(201,168,76,0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+      border: 1px solid rgba(201,168,76,0.4);
       border-radius: var(--radius);
-      padding: 1.25rem 2.25rem;
-      margin-bottom: 2.75rem;
-      max-width: 440px;
+      padding: 0.85rem 1.75rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gold-lt);
+      margin-bottom: 2.25rem;
     }
-    .hero-launch-headline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--gold);
-      margin-bottom: 0.3rem;
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
     }
-    .hero-launch-sub { font-size: 0.875rem; color: var(--silver); }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .trust-badges {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .trust-badges span {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ts);
+    }
+    .trust-badges .dot { color: var(--gold); font-size: 1rem; }
     .hero-scroll {
       position: absolute;
       bottom: 2rem;
@@ -282,773 +430,724 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.4rem;
-      font-size: 0.7rem;
-      letter-spacing: 1.5px;
+      gap: 0.35rem;
+      font-size: 0.65rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--tm);
       animation: scroll-hint 2.5s ease infinite;
     }
-    .hero-scroll-line {
-      width: 1px;
-      height: 36px;
-      background: linear-gradient(to bottom, var(--gold), transparent);
-    }
+    .hero-scroll-line { width:1px; height:36px; background:linear-gradient(to bottom,var(--gold),transparent); }
     @keyframes scroll-hint {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      55% { transform: translateX(-50%) translateY(7px); }
+      0%,100% { transform:translateX(-50%) translateY(0); }
+      60% { transform:translateX(-50%) translateY(7px); }
     }
 
-    /* ===== ABOUT ===== */
+    /* ============================================================
+       ABOUT
+    ============================================================ */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
       align-items: center;
     }
-    .about-body p { color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
-    .about-body .section-title { text-align: left; }
-    .about-points {
-      display: flex;
-      flex-direction: column;
-      gap: 1.1rem;
-      margin-top: 2rem;
-    }
-    .about-point {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    .about-point-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-s);
-      background: var(--gold-glow);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-    .about-point-copy strong {
-      display: block;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0.15rem;
-    }
-    .about-point-copy span { font-size: 0.875rem; color: var(--muted); }
+    .about-body p { color: var(--ts); line-height: 1.85; font-size: 1.05rem; }
+    .about-body .gold-rule { margin-top: 1.75rem; margin-bottom: 1.75rem; }
     .about-stats {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.1rem;
     }
-    .stat-card {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
+    .stat-box {
+      background: var(--bg3);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.75rem;
+      padding: 1.75rem 1.5rem;
       text-align: center;
-      transition: border-color var(--trans);
+      transition: all var(--trans);
+      position: relative;
+      overflow: hidden;
     }
-    .stat-card:hover { border-color: var(--border); }
-    .stat-value {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: var(--gold);
+    .stat-box::before {
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;
+      height:2px;
+      background:linear-gradient(to right,var(--gold),transparent);
+      opacity:0;
+      transition:opacity var(--trans);
     }
-    .stat-label { font-size: 0.82rem; color: var(--muted); margin-top: 0.25rem; }
-    .stat-card--wide {
-      grid-column: 1 / -1;
-      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02));
-      border-color: var(--border);
+    .stat-box:hover { border-color: rgba(201,168,76,0.4); transform:translateY(-3px); }
+    .stat-box:hover::before { opacity:1; }
+    .stat-val {
+      font-family:'Playfair Display',serif;
+      font-size:1.5rem;
+      font-weight:700;
+      color:var(--gold);
+      margin-bottom:0.3rem;
     }
-    .stat-card--wide .stat-value { font-size: 1rem; letter-spacing: 1px; }
+    .stat-label { font-size:0.82rem; color:var(--tm); line-height:1.4; }
 
-    /* ===== SERVICES ===== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-    .service-card {
-      background: var(--black-card);
+    /* ============================================================
+       CARDS (shared)
+    ============================================================ */
+    .card {
+      background: var(--bg3);
       border: 1px solid var(--border-s);
       border-radius: var(--radius);
       padding: 2rem;
+      transition: all var(--trans);
       position: relative;
       overflow: hidden;
-      transition: all var(--trans);
     }
-    .service-card::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(to right, var(--gold), transparent);
-      opacity: 0;
-      transition: opacity var(--trans);
+    .card::after {
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;
+      height:2px;
+      background:linear-gradient(to right,var(--gold),transparent);
+      opacity:0;
+      transition:opacity var(--trans);
     }
-    .service-card:hover {
-      border-color: var(--border);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 48px rgba(0,0,0,0.45);
+    .card:hover { border-color:var(--border); transform:translateY(-4px); box-shadow:0 20px 50px rgba(0,0,0,0.45); }
+    .card:hover::after { opacity:1; }
+    .card-icon { font-size:2rem; margin-bottom:1.1rem; }
+    .card h3 {
+      font-family:'Playfair Display',serif;
+      font-size:1.1rem;
+      font-weight:600;
+      color:var(--tp);
+      margin-bottom:0.65rem;
     }
-    .service-card:hover::after { opacity: 1; }
-    .service-icon { font-size: 2rem; margin-bottom: 1.25rem; }
-    .service-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0.65rem;
+    .card p { font-size:0.875rem; color:var(--tm); line-height:1.75; }
+    .card-prices {
+      margin-top:1rem;
+      border-top:1px solid var(--border-s);
+      padding-top:1rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.3rem;
     }
-    .service-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+    .price-row {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:0.82rem;
+    }
+    .price-row span:first-child { color:var(--tm); }
+    .price-val { color:var(--gold-lt); font-weight:600; }
 
-    /* ===== CALCULATOR ===== */
-    .calc-wrap {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 2rem;
-      align-items: start;
+    /* ============================================================
+       RESIDENTIAL SERVICES
+    ============================================================ */
+    .services-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.35rem;
     }
-    .calc-panel, .calc-result {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius);
-      padding: 2.25rem;
+
+    /* ============================================================
+       CALCULATOR
+    ============================================================ */
+    .calc-wrap {
+      display:grid;
+      grid-template-columns:1fr 300px;
+      gap:2rem;
+      align-items:start;
+    }
+    .calc-panel {
+      background:var(--bg3);
+      border:1px solid var(--border-s);
+      border-radius:var(--radius);
+      padding:2.25rem;
     }
     .calc-panel-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1.75rem;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border-s);
+      font-family:'Playfair Display',serif;
+      font-size:1.2rem;
+      font-weight:600;
+      color:var(--tp);
+      margin-bottom:1.5rem;
+      padding-bottom:1.25rem;
+      border-bottom:1px solid var(--border-s);
     }
-    .f-group { margin-bottom: 1.5rem; }
-    .f-label {
-      display: block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--silver);
-      margin-bottom: 0.55rem;
+    .calc-step { margin-bottom:1.5rem; }
+    .calc-step-label {
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      font-size:0.72rem;
+      font-weight:600;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--silver);
+      margin-bottom:0.75rem;
     }
-    .f-select, .f-input, .f-textarea {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      background: var(--black-el);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius-s);
-      font-family: inherit;
-      font-size: 0.95rem;
-      color: var(--white);
-      appearance: none;
-      transition: border-color var(--trans), box-shadow var(--trans);
+    .calc-step-num {
+      width:22px;height:22px;
+      border-radius:50%;
+      background:var(--gold);
+      color:#000;
+      font-size:0.7rem;
+      font-weight:700;
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;
+    }
+    .f-select,.f-input,.f-textarea {
+      width:100%;
+      padding:0.75rem 1rem;
+      background:var(--bg2);
+      border:1px solid var(--border-s);
+      border-radius:var(--radius-s);
+      font-family:inherit;
+      font-size:0.95rem;
+      color:var(--tp);
+      appearance:none;
+      transition:border-color var(--trans),box-shadow var(--trans);
     }
     .f-select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BA8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 1rem center;
-      padding-right: 2.5rem;
-      cursor: pointer;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BA8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:right 1rem center;
+      padding-right:2.5rem;
+      cursor:pointer;
     }
-    .f-select option { background: var(--black-card); }
-    .f-select:focus, .f-input:focus, .f-textarea:focus {
-      outline: none;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+    .f-select option { background:var(--bg3); }
+    .f-select:focus,.f-input:focus,.f-textarea:focus {
+      outline:none;
+      border-color:var(--gold);
+      box-shadow:0 0 0 3px rgba(201,168,76,0.1);
     }
-    .f-textarea { resize: vertical; min-height: 90px; }
-    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .f-textarea { resize:vertical; min-height:90px; }
+    .f-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .f-group { margin-bottom:1.1rem; }
+    .f-label {
+      display:block;
+      font-size:0.75rem;
+      font-weight:600;
+      letter-spacing:0.8px;
+      text-transform:uppercase;
+      color:var(--silver);
+      margin-bottom:0.5rem;
+    }
 
     /* Addon checkboxes */
-    .addons-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.55rem;
-    }
+    .addons-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; }
     .addon-label {
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.6rem 0.8rem;
-      background: var(--black-el);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius-s);
-      font-size: 0.875rem;
-      color: var(--muted);
-      cursor: pointer;
-      transition: all var(--trans);
-      user-select: none;
+      display:flex;
+      align-items:center;
+      gap:0.5rem;
+      padding:0.6rem 0.75rem;
+      background:var(--bg2);
+      border:1px solid var(--border-s);
+      border-radius:var(--radius-s);
+      font-size:0.85rem;
+      color:var(--tm);
+      cursor:pointer;
+      transition:all var(--trans);
+      user-select:none;
     }
-    .addon-label:hover { color: var(--text); border-color: var(--border); }
-    .addon-label input { display: none; }
+    .addon-label:hover { color:var(--tp); border-color:var(--border); }
+    .addon-label input { display:none; }
     .addon-box {
-      width: 16px;
-      height: 16px;
-      border: 1.5px solid var(--silver);
-      border-radius: 4px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9px;
-      font-weight: 700;
-      transition: all var(--trans);
+      width:16px;height:16px;
+      border:1.5px solid var(--silver);
+      border-radius:4px;
+      flex-shrink:0;
+      display:flex;align-items:center;justify-content:center;
+      font-size:9px;font-weight:700;
+      transition:all var(--trans);
     }
-    .addon-label input:checked ~ .addon-box {
-      background: var(--gold);
-      border-color: var(--gold);
-      color: #000;
-    }
-    .addon-label:has(input:checked) {
-      border-color: var(--border);
-      background: rgba(201,168,76,0.05);
-      color: var(--white);
-    }
-    .addon-price { margin-left: auto; color: var(--gold); font-size: 0.8rem; font-weight: 600; }
+    .addon-label input:checked ~ .addon-box { background:var(--gold); border-color:var(--gold); color:#000; }
+    .addon-label:has(input:checked) { border-color:var(--border); background:rgba(201,168,76,0.05); color:var(--tp); }
+    .addon-price { margin-left:auto; color:var(--gold); font-size:0.78rem; font-weight:600; }
 
     /* Discount toggle */
     .discount-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 1.1rem;
-      background: rgba(201,168,76,0.06);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-s);
-      cursor: pointer;
-      margin-bottom: 1.5rem;
+      display:flex;align-items:center;justify-content:space-between;gap:1rem;
+      padding:1rem 1.1rem;
+      background:rgba(201,168,76,0.06);
+      border:1px solid var(--border);
+      border-radius:var(--radius-s);
+      cursor:pointer;
     }
-    .discount-label { font-size: 0.875rem; font-weight: 600; color: var(--gold); }
-    .discount-sub { font-size: 0.75rem; color: var(--muted); margin-top: 0.1rem; }
-    .toggle {
-      width: 42px;
-      height: 23px;
-      background: var(--black-el);
-      border: 1.5px solid var(--border-s);
-      border-radius: 100px;
-      position: relative;
-      flex-shrink: 0;
-      transition: all var(--trans);
+    .discount-lbl { font-size:0.875rem; font-weight:600; color:var(--gold); }
+    .discount-sub { font-size:0.75rem; color:var(--tm); margin-top:0.1rem; }
+    .toggle-sw {
+      width:44px;height:24px;
+      background:var(--bg2);
+      border:1.5px solid var(--border-s);
+      border-radius:100px;
+      position:relative;
+      flex-shrink:0;
+      transition:all var(--trans);
     }
-    .toggle::after {
-      content: '';
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: var(--silver);
-      top: 50%;
-      left: 3px;
-      transform: translateY(-50%);
-      transition: all var(--trans);
+    .toggle-sw::after {
+      content:'';
+      position:absolute;
+      width:16px;height:16px;
+      border-radius:50%;
+      background:var(--silver);
+      top:50%;left:3px;
+      transform:translateY(-50%);
+      transition:all var(--trans);
     }
-    .toggle.on { background: var(--gold-glow); border-color: var(--gold); }
-    .toggle.on::after { background: var(--gold); left: calc(100% - 18px); }
+    .toggle-sw.on { background:var(--glow); border-color:var(--gold); }
+    .toggle-sw.on::after { background:var(--gold); left:calc(100% - 19px); }
 
-    /* Result panel */
-    .calc-result { position: sticky; top: calc(var(--nav-h) + 1.5rem); }
-    .calc-result-heading {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--silver);
-      margin-bottom: 1.5rem;
+    /* Calc result panel */
+    .calc-result {
+      background:var(--bg3);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:2rem;
+      position:sticky;
+      top:calc(var(--nav-h) + 1.5rem);
     }
-    .price-label { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.3rem; }
-    .price-main {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1;
+    .calc-result-title {
+      font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;
+      color:var(--silver);margin-bottom:1.25rem;
     }
-    .price-main.struck {
-      font-size: 2rem;
-      text-decoration: line-through;
-      color: var(--muted);
+    .price-display { margin-bottom:1.25rem; }
+    .price-original {
+      font-family:'Playfair Display',serif;
+      font-size:3rem;font-weight:700;
+      color:var(--tp);line-height:1;
     }
+    .price-original.struck { font-size:2rem; text-decoration:line-through; color:var(--tm); }
     .price-discounted {
-      display: none;
-      font-family: 'Playfair Display', serif;
-      font-size: 3.2rem;
-      font-weight: 700;
-      color: var(--gold);
-      line-height: 1;
+      display:none;
+      font-family:'Playfair Display',serif;
+      font-size:3rem;font-weight:700;
+      color:var(--gold);line-height:1;
     }
     .price-badge {
-      display: none;
-      margin-top: 0.5rem;
-      font-size: 0.72rem;
-      font-weight: 700;
-      background: var(--gold);
-      color: #000;
-      padding: 0.2rem 0.65rem;
-      border-radius: 100px;
+      display:none;
+      font-size:0.72rem;font-weight:700;
+      background:var(--gold);color:#000;
+      padding:0.2rem 0.65rem;
+      border-radius:100px;margin-top:0.5rem;
     }
-    .breakdown {
-      display: none;
-      border-top: 1px solid var(--border-s);
-      margin: 1.25rem 0;
-      padding-top: 1rem;
+    .price-label { font-size:0.8rem; color:var(--tm); margin-bottom:0.3rem; }
+    .calc-breakdown {
+      display:none;
+      border-top:1px solid var(--border-s);
+      margin:1.1rem 0;padding-top:1rem;
     }
     .b-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.83rem;
-      color: var(--muted);
-      margin-bottom: 0.35rem;
+      display:flex;justify-content:space-between;
+      font-size:0.82rem;color:var(--tm);
+      margin-bottom:0.3rem;
     }
     .b-row.total {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--white);
-      border-top: 1px solid var(--border-s);
-      padding-top: 0.5rem;
-      margin-top: 0.5rem;
+      font-size:0.95rem;font-weight:600;color:var(--tp);
+      border-top:1px solid var(--border-s);
+      padding-top:0.5rem;margin-top:0.5rem;
     }
-    .b-row.discount-line { color: var(--gold); display: none; }
-    .calc-note { font-size: 0.77rem; color: var(--muted); line-height: 1.55; margin-bottom: 1.25rem; }
+    .b-row.disc-line { color:var(--gold); display:none; }
+    .calc-note { font-size:0.75rem;color:var(--tm);line-height:1.55;margin-bottom:1.25rem; }
 
-    /* ===== WHY US ===== */
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1.25rem;
-    }
-    .why-card {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius);
-      padding: 1.75rem 1.25rem;
-      text-align: center;
-      transition: all var(--trans);
-    }
-    .why-card:hover { border-color: var(--border); transform: translateY(-3px); }
-    .why-icon { font-size: 1.9rem; margin-bottom: 1rem; }
-    .why-card h3 { font-size: 0.875rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; line-height: 1.3; }
-    .why-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
-
-    /* ===== CONTACT ===== */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 3rem;
-      align-items: start;
-    }
-    .contact-items { display: flex; flex-direction: column; gap: 0.75rem; }
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.9rem;
-      padding: 1.1rem 1.25rem;
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius-s);
-      transition: border-color var(--trans);
-    }
-    .contact-item:hover { border-color: var(--border); }
-    .contact-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
-    .contact-copy strong {
-      display: block;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--silver);
-      margin-bottom: 0.2rem;
-    }
-    .contact-copy a, .contact-copy span { font-size: 0.93rem; color: var(--white); }
-    .contact-copy a:hover { color: var(--gold); }
-    .map-wrap {
-      border-radius: var(--radius-s);
-      overflow: hidden;
-      border: 1px solid var(--border-s);
-      margin-top: 0.75rem;
-    }
-    .map-wrap iframe {
-      display: block;
-      width: 100%;
-      height: 195px;
-      filter: grayscale(1) invert(1) brightness(0.75) contrast(1.1);
-    }
-    .form-panel {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius);
-      padding: 2.25rem;
-    }
-    .form-panel-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1.75rem;
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid var(--border-s);
-    }
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .form-success.show { display: block; }
-    .form-success-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
-    .form-success strong { display: block; color: var(--white); font-size: 1rem; margin-bottom: 0.5rem; }
-    .form-success p { font-size: 0.875rem; color: var(--muted); }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      background: var(--black-soft);
-      border-top: 1px solid var(--border-s);
-      padding: 3.5rem 0 2rem;
-    }
-    .footer-top {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-      align-items: start;
-    }
-    .footer-brand .logo-primary { font-size: 1.5rem; }
-    .footer-brand p {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 0.75rem;
-      line-height: 1.7;
-    }
-    .footer-nav {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      text-align: center;
-    }
-    .footer-nav a { font-size: 0.83rem; color: var(--muted); transition: color var(--trans); }
-    .footer-nav a:hover { color: var(--gold); }
-    .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; }
-    .social-links { display: flex; gap: 0.6rem; }
-    .social-link {
-      width: 36px;
-      height: 36px;
-      border-radius: var(--radius-s);
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      color: var(--silver);
-      font-weight: 700;
-      transition: all var(--trans);
-    }
-    .social-link:hover { border-color: var(--border); color: var(--gold); transform: translateY(-2px); }
-    .footer-contact-mini { font-size: 0.8rem; color: var(--muted); text-align: right; line-height: 1.7; }
-    .footer-contact-mini a { color: var(--muted); transition: color var(--trans); }
-    .footer-contact-mini a:hover { color: var(--gold); }
-    .footer-bottom {
-      border-top: 1px solid var(--border-s);
-      padding-top: 1.75rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-    .footer-bottom p { font-size: 0.78rem; color: var(--muted); }
-
-    /* ===== MODAL ===== */
-    .overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.88);
-      backdrop-filter: blur(6px);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-    .overlay.open { display: flex; }
-    .modal {
-      background: var(--black-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2.5rem;
-      max-width: 500px;
-      width: 100%;
-      position: relative;
-      animation: modal-in 0.28s ease;
-    }
-    @keyframes modal-in {
-      from { opacity: 0; transform: translateY(14px) scale(0.97); }
-      to   { opacity: 1; transform: none; }
-    }
-    .modal-close {
-      position: absolute;
-      top: 1.1rem; right: 1.1rem;
-      width: 30px; height: 30px;
-      border-radius: 6px;
-      background: var(--black-el);
-      border: 1px solid var(--border-s);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      transition: all var(--trans);
-    }
-    .modal-close:hover { color: var(--white); border-color: var(--border); }
-    .modal-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 0.35rem;
-    }
-    .modal-sub { font-size: 0.875rem; color: var(--muted); margin-bottom: 1.75rem; }
-    .modal-quote-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.9rem 1.1rem;
-      background: var(--black-el);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-s);
-      margin-bottom: 1.5rem;
-    }
-    .modal-quote-svc { font-size: 0.875rem; color: var(--muted); }
-    .modal-quote-amt {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--gold);
-    }
-
-    /* ===== SCROLL REVEAL ===== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .reveal.in { opacity: 1; transform: none; }
-    .d1 { transition-delay: 0.08s; }
-    .d2 { transition-delay: 0.16s; }
-    .d3 { transition-delay: 0.24s; }
-    .d4 { transition-delay: 0.32s; }
-    .d5 { transition-delay: 0.40s; }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 1024px) {
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .why-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    @media (max-width: 900px) {
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .calc-wrap { grid-template-columns: 1fr; }
-      .calc-result { position: static; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .footer-top { grid-template-columns: 1fr; }
-      .footer-right { align-items: flex-start; }
-      .footer-contact-mini { text-align: left; }
-    }
-    @media (max-width: 640px) {
-      .section { padding: 4rem 0; }
-      .nav-links, .nav-cta { display: none; }
-      .nav-toggle { display: flex; }
-      .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        position: fixed;
-        top: var(--nav-h);
-        left: 0; right: 0;
-        background: rgba(8,8,8,0.97);
-        backdrop-filter: blur(16px);
-        padding: 2rem 1.5rem;
-        border-bottom: 1px solid var(--border-s);
-      }
-      .services-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: repeat(2, 1fr); }
-      .addons-grid { grid-template-columns: 1fr; }
-      .f-row { grid-template-columns: 1fr; }
-      .hero-actions { flex-direction: column; align-items: center; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .about-stats { grid-template-columns: 1fr 1fr; }
-      .comm-grid { grid-template-columns: 1fr; }
-      .f-row-3 { grid-template-columns: 1fr; }
-      .comm-card--wide { flex-direction: column; gap: 1rem; }
-    }
-
-    /* ===== COMMERCIAL ===== */
-    .commercial {
-      position: relative;
-      background: var(--black);
-    }
-    .commercial::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(138,155,168,0.04) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .commercial-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(138,155,168,0.25), transparent);
-      margin-bottom: 0;
-    }
+    /* ============================================================
+       COMMERCIAL
+    ============================================================ */
     .comm-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      margin-bottom: 2.5rem;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.25rem;
+      margin-bottom:2.5rem;
     }
     .comm-card {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      position: relative;
-      overflow: hidden;
-      transition: all var(--trans);
+      background:var(--bg3);
+      border:1px solid var(--border-s);
+      border-radius:var(--radius);
+      padding:1.75rem;
+      transition:all var(--trans);
+      position:relative;overflow:hidden;
     }
     .comm-card::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(to right, var(--silver), transparent);
-      opacity: 0;
-      transition: opacity var(--trans);
+      content:'';position:absolute;
+      top:0;left:0;right:0;height:2px;
+      background:linear-gradient(to right,var(--silver),transparent);
+      opacity:0;transition:opacity var(--trans);
     }
-    .comm-card:hover { border-color: rgba(138,155,168,0.28); transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
-    .comm-card:hover::after { opacity: 1; }
+    .comm-card:hover { border-color:rgba(138,155,168,0.3); transform:translateY(-3px); box-shadow:0 16px 40px rgba(0,0,0,0.4); }
+    .comm-card:hover::after { opacity:1; }
     .comm-card--wide {
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      padding: 1.5rem 2rem;
+      grid-column:1/-1;
+      display:flex;align-items:center;gap:2.5rem;
+      padding:1.5rem 2rem;
     }
     .comm-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0.65rem;
+      font-family:'Playfair Display',serif;
+      font-size:1.05rem;font-weight:600;
+      color:var(--tp);margin-bottom:0.65rem;
     }
-    .comm-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
-    .comm-card--wide p { margin-bottom: 0; }
-    .comm-prices { display: flex; flex-direction: column; gap: 0.35rem; }
-    .comm-price-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.82rem; }
-    .comm-price-row span:first-child { color: var(--muted); white-space: nowrap; }
-    .comm-price-val { color: var(--silver-lt); font-weight: 600; white-space: nowrap; }
-    .comm-card--wide .comm-prices { flex-shrink: 0; min-width: 180px; }
+    .comm-card p { font-size:0.85rem;color:var(--tm);line-height:1.75;margin-bottom:1rem; }
+    .comm-card--wide p { margin-bottom:0; }
+    .comm-prices { display:flex;flex-direction:column;gap:0.35rem; }
+    .comm-price-row { display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:0.82rem; }
+    .comm-price-row span:first-child { color:var(--tm);white-space:nowrap; }
+    .comm-price-val { color:var(--silver-lt);font-weight:600;white-space:nowrap; }
+    .comm-card--wide .comm-prices { flex-shrink:0;min-width:180px; }
 
     /* Who We Serve */
     .who-serve {
-      background: linear-gradient(135deg, rgba(138,155,168,0.07), rgba(138,155,168,0.02));
-      border: 1px solid rgba(138,155,168,0.18);
-      border-radius: var(--radius);
-      padding: 2.25rem;
-      margin-bottom: 2.5rem;
-      text-align: center;
+      background:linear-gradient(135deg,rgba(138,155,168,0.07),rgba(138,155,168,0.02));
+      border:1px solid rgba(138,155,168,0.18);
+      border-radius:var(--radius);
+      padding:2rem;margin-bottom:2.5rem;text-align:center;
     }
     .who-serve-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1.5rem;
+      font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;
+      color:var(--tp);margin-bottom:1.25rem;
     }
-    .who-serve-list { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
+    .who-list { display:flex;flex-wrap:wrap;gap:0.65rem;justify-content:center; }
     .who-pill {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.45rem 1rem;
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: 100px;
-      font-size: 0.85rem;
-      color: var(--silver-lt);
-      font-weight: 500;
-      transition: all var(--trans);
+      padding:0.42rem 1rem;
+      background:var(--bg3);border:1px solid var(--border-s);
+      border-radius:100px;font-size:0.84rem;color:var(--silver-lt);font-weight:500;
+      transition:all var(--trans);
     }
-    .who-pill:hover { border-color: rgba(138,155,168,0.3); color: var(--white); }
+    .who-pill:hover { border-color:var(--border-s);color:var(--tp); }
 
     /* Commercial form */
     .comm-form-panel {
-      background: var(--black-card);
-      border: 1px solid var(--border-s);
-      border-radius: var(--radius);
-      padding: 2.25rem;
-      margin-bottom: 2.5rem;
+      background:var(--bg3);border:1px solid var(--border-s);
+      border-radius:var(--radius);padding:2.25rem;margin-bottom:2.5rem;
     }
     .comm-form-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0.4rem;
+      font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;
+      color:var(--tp);margin-bottom:0.4rem;
     }
     .comm-form-sub {
-      font-size: 0.875rem;
-      color: var(--muted);
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border-s);
+      font-size:0.875rem;color:var(--tm);
+      margin-bottom:1.75rem;padding-bottom:1.5rem;
+      border-bottom:1px solid var(--border-s);
     }
-    .f-row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 
-    /* Trust badges */
-    .trust-strip { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+    /* ============================================================
+       WHY CHOOSE US
+    ============================================================ */
+    .why-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.25rem;
+    }
+    .why-card {
+      background:var(--bg3);
+      border:1px solid var(--border-s);
+      border-radius:var(--radius);
+      padding:2rem 1.5rem;
+      text-align:center;
+      transition:all var(--trans);
+    }
+    .why-card:hover { border-color:var(--border);transform:translateY(-3px); }
+    .why-icon { font-size:2rem;margin-bottom:1rem; }
+    .why-card h3 { font-size:0.95rem;font-weight:600;color:var(--tp);margin-bottom:0.5rem;line-height:1.3; }
+    .why-card p { font-size:0.82rem;color:var(--tm);line-height:1.6; }
+
+    /* ============================================================
+       SERVICE AREA
+    ============================================================ */
+    .area-cities {
+      display:flex;flex-wrap:wrap;gap:0.75rem;
+      justify-content:center;margin-bottom:2.5rem;
+    }
+    .area-city {
+      padding:0.55rem 1.25rem;
+      background:var(--bg3);border:1px solid var(--border);
+      border-radius:100px;font-size:0.9rem;
+      color:var(--gold-lt);font-weight:500;
+      transition:all var(--trans);
+    }
+    .area-city:hover { background:var(--glow); }
+    .map-wrap {
+      border-radius:var(--radius);overflow:hidden;
+      border:1px solid var(--border-s);
+    }
+    .map-wrap iframe {
+      display:block;width:100%;height:380px;
+      filter:grayscale(1) invert(1) brightness(0.8) contrast(1.1);
+    }
+
+    /* ============================================================
+       REVIEWS
+    ============================================================ */
+    .reviews-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.35rem;
+      margin-bottom:2.5rem;
+    }
+    .review-card {
+      background:var(--bg3);border:1px solid var(--border-s);
+      border-radius:var(--radius);padding:1.75rem;
+      transition:all var(--trans);
+    }
+    .review-card:hover { border-color:var(--border);transform:translateY(-2px); }
+    .review-stars { color:var(--gold);font-size:1rem;margin-bottom:0.9rem;letter-spacing:2px; }
+    .review-text { font-size:0.9rem;color:var(--ts);line-height:1.8;margin-bottom:1.1rem;font-style:italic; }
+    .review-author { font-size:0.82rem;font-weight:600;color:var(--silver-lt); }
+    .review-date { font-size:0.75rem;color:var(--tm);margin-top:0.2rem; }
+    .review-placeholder {
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      min-height:180px;border:1px dashed var(--border-s);border-radius:var(--radius);
+      background:var(--bg3);padding:2rem;text-align:center;
+    }
+    .review-placeholder p { color:var(--tm);font-size:0.875rem; }
+
+    /* ============================================================
+       FAQ
+    ============================================================ */
+    .faq-list { max-width:780px;margin:0 auto; }
+    .faq-item {
+      border-bottom:1px solid var(--border-s);
+      overflow:hidden;
+    }
+    .faq-q {
+      display:flex;align-items:center;justify-content:space-between;
+      padding:1.25rem 0;
+      cursor:pointer;
+      font-size:1rem;font-weight:500;color:var(--tp);
+      background:none;border:none;width:100%;text-align:left;
+      gap:1rem;transition:color var(--trans);
+    }
+    .faq-q:hover { color:var(--gold); }
+    .faq-icon {
+      width:28px;height:28px;border-radius:50%;
+      background:var(--bg3);border:1px solid var(--border-s);
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;font-size:1.1rem;line-height:1;
+      color:var(--gold);transition:transform var(--trans),background var(--trans);
+    }
+    .faq-item.open .faq-icon { transform:rotate(45deg); background:var(--glow); border-color:var(--border); }
+    .faq-a {
+      max-height:0;overflow:hidden;
+      transition:max-height 0.4s ease,padding var(--trans);
+      padding:0 0 0;
+    }
+    .faq-a-inner { padding-bottom:1.25rem; }
+    .faq-a p { font-size:0.9rem;color:var(--ts);line-height:1.8; }
+    .faq-item.open .faq-a { max-height:300px; }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    .contact-grid {
+      display:grid;grid-template-columns:360px 1fr;
+      gap:3rem;align-items:start;
+    }
+    .contact-items { display:flex;flex-direction:column;gap:0.75rem; }
+    .contact-item {
+      display:flex;align-items:flex-start;gap:1rem;
+      padding:1.1rem 1.25rem;
+      background:var(--bg3);border:1px solid var(--border-s);
+      border-radius:var(--radius-s);transition:border-color var(--trans);
+    }
+    .contact-item:hover { border-color:var(--border); }
+    .contact-icon { font-size:1.2rem;flex-shrink:0;margin-top:2px; }
+    .contact-copy strong {
+      display:block;font-size:0.7rem;font-weight:600;
+      letter-spacing:1px;text-transform:uppercase;
+      color:var(--silver);margin-bottom:0.2rem;
+    }
+    .contact-copy a,.contact-copy span { font-size:0.93rem;color:var(--tp); }
+    .contact-copy a:hover { color:var(--gold); }
+    .form-panel {
+      background:var(--bg3);border:1px solid var(--border-s);
+      border-radius:var(--radius);padding:2.25rem;
+    }
+    .form-panel-title {
+      font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;
+      color:var(--tp);margin-bottom:1.75rem;padding-bottom:1.25rem;
+      border-bottom:1px solid var(--border-s);
+    }
+    .form-success {
+      display:none;text-align:center;padding:2rem 1rem;
+    }
+    .form-success.show { display:block; }
+    .form-success-icon { font-size:2.5rem;margin-bottom:0.75rem; }
+    .form-success strong { display:block;color:var(--tp);font-size:1rem;margin-bottom:0.5rem; }
+    .form-success p { font-size:0.875rem;color:var(--tm); }
+
+    /* ============================================================
+       TRUST STRIP
+    ============================================================ */
+    .trust-strip { display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center; }
     .trust-badge {
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.45rem 1rem;
-      background: var(--gold-glow);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--gold);
+      display:flex;align-items:center;gap:0.45rem;
+      padding:0.45rem 1rem;
+      background:var(--glow);border:1px solid var(--border);
+      border-radius:100px;font-size:0.78rem;font-weight:600;color:var(--gold);
     }
 
-    @media (max-width: 900px) {
-      .comm-grid { grid-template-columns: repeat(2, 1fr); }
-      .comm-card--wide { flex-direction: column; gap: 1rem; }
-      .f-row-3 { grid-template-columns: 1fr 1fr; }
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background:var(--bg2);border-top:1px solid var(--border-s);
+      padding:3.5rem 0 2rem;
+    }
+    .footer-top {
+      display:grid;grid-template-columns:1fr auto 1fr;
+      gap:2.5rem;margin-bottom:2.5rem;align-items:start;
+    }
+    .footer-brand-logo {
+      display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;
+    }
+    .footer-brand-logo img {
+      height:52px;width:auto;border-radius:8px;
+      background:#fff;padding:3px 4px;
+    }
+    .footer-brand p { font-size:0.82rem;color:var(--tm);line-height:1.75; }
+    .footer-nav { display:flex;flex-direction:column;gap:0.6rem;text-align:center; }
+    .footer-nav a { font-size:0.83rem;color:var(--tm);transition:color var(--trans); }
+    .footer-nav a:hover { color:var(--gold); }
+    .footer-right { display:flex;flex-direction:column;align-items:flex-end;gap:1rem; }
+    .social-links { display:flex;gap:0.6rem; }
+    .social-link {
+      width:38px;height:38px;border-radius:var(--radius-s);
+      background:var(--bg3);border:1px solid var(--border-s);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--silver);font-size:0.9rem;font-weight:700;
+      transition:all var(--trans);
+    }
+    .social-link:hover { border-color:var(--border);color:var(--gold);transform:translateY(-2px); }
+    .footer-contact-mini { font-size:0.8rem;color:var(--tm);text-align:right;line-height:1.75; }
+    .footer-contact-mini a { color:var(--tm);transition:color var(--trans); }
+    .footer-contact-mini a:hover { color:var(--gold); }
+    .footer-bottom {
+      border-top:1px solid var(--border-s);padding-top:1.75rem;
+      display:flex;justify-content:space-between;align-items:center;
+      flex-wrap:wrap;gap:0.75rem;
+    }
+    .footer-bottom p { font-size:0.78rem;color:var(--tm); }
+    .footer-tagline {
+      font-family:'Playfair Display',serif;
+      font-style:italic;font-size:0.85rem;color:var(--gold);
+    }
+
+    /* ============================================================
+       MODAL
+    ============================================================ */
+    .overlay {
+      display:none;position:fixed;inset:0;
+      background:rgba(0,0,0,0.88);backdrop-filter:blur(6px);
+      z-index:2000;align-items:center;justify-content:center;padding:1.5rem;
+    }
+    .overlay.open { display:flex; }
+    .modal {
+      background:var(--bg3);border:1px solid var(--border);
+      border-radius:var(--radius);padding:2.5rem;
+      max-width:500px;width:100%;position:relative;
+      animation:modal-in 0.28s ease;
+    }
+    @keyframes modal-in {
+      from { opacity:0;transform:translateY(14px) scale(0.97); }
+      to { opacity:1;transform:none; }
+    }
+    .modal-close {
+      position:absolute;top:1.1rem;right:1.1rem;
+      width:30px;height:30px;border-radius:6px;
+      background:var(--bg2);border:1px solid var(--border-s);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--tm);font-size:0.9rem;
+      cursor:pointer;transition:all var(--trans);
+    }
+    .modal-close:hover { color:var(--tp);border-color:var(--border); }
+    .modal-title {
+      font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;
+      color:var(--tp);margin-bottom:0.4rem;
+    }
+    .modal-sub { font-size:0.875rem;color:var(--tm);margin-bottom:1.75rem; }
+    .modal-quote-bar {
+      display:flex;justify-content:space-between;align-items:center;
+      padding:0.9rem 1.1rem;
+      background:var(--bg2);border:1px solid var(--border);
+      border-radius:var(--radius-s);margin-bottom:1.5rem;
+    }
+    .modal-quote-svc { font-size:0.875rem;color:var(--tm); }
+    .modal-quote-amt {
+      font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--gold);
+    }
+
+    /* ============================================================
+       SCROLL REVEAL ANIMATIONS
+    ============================================================ */
+    .reveal {
+      opacity:0;transform:translateY(24px);
+      transition:opacity 0.6s ease,transform 0.6s ease;
+    }
+    .reveal.in { opacity:1;transform:none; }
+    .d1{transition-delay:0.08s} .d2{transition-delay:0.16s}
+    .d3{transition-delay:0.24s} .d4{transition-delay:0.32s}
+    .d5{transition-delay:0.40s} .d6{transition-delay:0.48s}
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width:1024px) {
+      .about-grid { grid-template-columns:1fr;gap:3rem; }
+      .why-grid { grid-template-columns:repeat(2,1fr); }
+      .calc-wrap { grid-template-columns:1fr; }
+      .calc-result { position:static; }
+      .contact-grid { grid-template-columns:1fr; }
+      .footer-top { grid-template-columns:1fr; }
+      .footer-right { align-items:flex-start; }
+      .footer-contact-mini { text-align:left; }
+    }
+    @media (max-width:900px) {
+      .services-grid { grid-template-columns:repeat(2,1fr); }
+      .comm-grid { grid-template-columns:repeat(2,1fr); }
+      .comm-card--wide { flex-direction:column;gap:1rem; }
+      .reviews-grid { grid-template-columns:1fr; }
+    }
+    @media (max-width:640px) {
+      .section { padding:4rem 0; }
+      .nav-links,.nav-cta { display:none; }
+      .nav-toggle { display:flex; }
+      .nav-links.open {
+        display:flex;flex-direction:column;gap:1.5rem;
+        position:fixed;top:var(--nav-h);left:0;right:0;
+        background:rgba(13,13,13,0.97);backdrop-filter:blur(16px);
+        padding:2rem 1.5rem;border-bottom:1px solid var(--border-s);
+        z-index:999;
+      }
+      .nav-links.open .nav-cta { display:block;align-self:flex-start; }
+      .services-grid { grid-template-columns:1fr; }
+      .comm-grid { grid-template-columns:1fr; }
+      .why-grid { grid-template-columns:1fr 1fr; }
+      .addons-grid { grid-template-columns:1fr; }
+      .f-row { grid-template-columns:1fr; }
+      .hero-ctas { flex-direction:column;align-items:center; }
+      .footer-bottom { flex-direction:column;text-align:center; }
+      .about-stats { grid-template-columns:1fr 1fr; }
+      .reviews-grid { grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ================================================================
+     HEADER
+================================================================ -->
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="#home" class="logo">
-      <img src="logo.png" alt="I-5 Cleaning LLC" class="logo-img" />
-      <div>
-        <div class="logo-primary">I-5 Cleaning LLC</div>
-        <div class="logo-secondary">Longview, WA</div>
+    <a href="#home" class="nav-logo">
+      <img src="logo.png" alt="I-5 Cleaning LLC" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">I-5 Cleaning LLC</div>
+        <div class="nav-logo-sub">Longview, WA</div>
       </div>
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#calculator">Pricing</a></li>
       <li><a href="#commercial">Commercial</a></li>
-      <li><a href="#why">Why Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="nav-cta"><a href="#calculator" class="btn btn--gold">Get a Quote</a></li>
+      <li class="nav-cta"><a href="#calculator" class="btn btn-gold btn-sm">Get Free Quote</a></li>
     </ul>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -1056,243 +1155,282 @@
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ================================================================
+     HERO
+================================================================ -->
 <section class="hero" id="home">
-  <div class="hero-badge">
-    <span class="hero-badge-dot"></span>
-    Now Accepting Clients — Longview &amp; Kelso, WA
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-logo-card">
+      <img src="logo.png" alt="I-5 Cleaning LLC — Clean Spaces. High Standards." />
+    </div>
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Now Accepting Clients — Longview &amp; Kelso, WA
+    </div>
+    <h1>I-5 Cleaning <span>LLC</span></h1>
+    <p class="hero-tagline">Clean Spaces. High Standards.</p>
+    <p class="hero-sub">Premium cleaning services for homes and businesses in Longview, WA</p>
+    <div class="hero-launch">🎉 Now Booking — 15% OFF First 10 Customers</div>
+    <div class="hero-ctas">
+      <a href="#calculator" class="btn btn-gold btn-lg">Get a Free Quote</a>
+      <a href="tel:+13608228539" class="btn btn-silver btn-lg">Call Now (360) 822-8539</a>
+    </div>
+    <div class="trust-badges">
+      <span>Licensed</span><span class="dot">•</span>
+      <span>Bonded</span><span class="dot">•</span>
+      <span>Insured</span><span class="dot">•</span>
+      <span>Same Crew Every Visit</span>
+    </div>
   </div>
-  <div class="hero-wordmark">
-    <img src="logo.png" alt="I-5 Cleaning LLC" class="hero-logo-img" />
-  </div>
-  <p class="hero-tagline">Clean Spaces. High Standards.</p>
-  <div class="hero-rule"></div>
-  <p class="hero-location">Serving Longview, Kelso &amp; surrounding areas</p>
-  <div class="hero-launch">
-    <div class="hero-launch-headline">🎉 Grand Opening — 15% Off</div>
-    <div class="hero-launch-sub">First 10 customers only. Limited spots remaining.</div>
-  </div>
-  <div class="hero-actions">
-    <a href="#calculator" class="btn btn--gold btn--lg">Get a Free Quote</a>
-    <a href="#services" class="btn btn--ghost btn--lg">View Services</a>
-  </div>
-  <div class="hero-scroll">
+  <div class="hero-scroll" aria-hidden="true">
     <span>Scroll</span>
     <div class="hero-scroll-line"></div>
   </div>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="section about" id="about">
+<!-- ================================================================
+     ABOUT
+================================================================ -->
+<section class="section section-alt" id="about">
   <div class="container">
     <div class="about-grid">
-      <div class="about-body">
-        <span class="section-eyebrow">About Us</span>
-        <h2 class="section-title">Locally Owned &amp;<br />Personally Invested</h2>
-        <p>I-5 Cleaning LLC is a locally owned company rooted right here in Longview, WA. We're not a franchise — we're your neighbors, and we care about the work we do in this community.</p>
-        <p>When you book with us, you get the same trusted crew every single visit. People who know your space, remember your preferences, and take pride in the result. No strangers at your door — ever.</p>
-        <div class="about-points">
-          <div class="about-point">
-            <div class="about-point-icon">🛡️</div>
-            <div class="about-point-copy">
-              <strong>Licensed, Bonded &amp; Insured</strong>
-              <span>Full protection on every visit. UBI 606-215-365.</span>
-            </div>
-          </div>
-          <div class="about-point">
-            <div class="about-point-icon">👥</div>
-            <div class="about-point-copy">
-              <strong>Same Crew Every Visit</strong>
-              <span>Consistency and trust built into every clean.</span>
-            </div>
-          </div>
-          <div class="about-point">
-            <div class="about-point-icon">📍</div>
-            <div class="about-point-copy">
-              <strong>Proudly Local</strong>
-              <span>Longview, WA — serving our community first.</span>
-            </div>
-          </div>
+      <div class="about-body reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">About I-5 Cleaning</h2>
+        <div class="gold-rule"></div>
+        <p>Founded by Gunner Skolrud, a Longview local, I-5 Cleaning was built on one simple promise — show up, do it right, every single time. We're a locally owned cleaning company serving homes and businesses across Longview, Kelso, and Cowlitz County. Same trusted crew every visit. No exceptions.</p>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-gold">Get a Free Quote</a>
+          <a href="tel:+13608228539" class="btn btn-ghost">Call (360) 822-8539</a>
         </div>
       </div>
       <div class="about-stats">
-        <div class="stat-card reveal">
-          <div class="stat-value">100%</div>
-          <div class="stat-label">Satisfaction Guarantee</div>
+        <div class="stat-box reveal d1">
+          <div class="stat-val">Locally<br/>Owned</div>
+          <div class="stat-label">Longview, WA</div>
         </div>
-        <div class="stat-card reveal d1">
-          <div class="stat-value">24h</div>
+        <div class="stat-box reveal d2">
+          <div class="stat-val">Same<br/>Crew</div>
+          <div class="stat-label">Every Visit</div>
+        </div>
+        <div class="stat-box reveal d3">
+          <div class="stat-val">&lt; 1hr</div>
           <div class="stat-label">Response Time</div>
         </div>
-        <div class="stat-card reveal d2">
-          <div class="stat-value">5★</div>
-          <div class="stat-label">Service Standard</div>
-        </div>
-        <div class="stat-card reveal d3">
-          <div class="stat-value">$0</div>
-          <div class="stat-label">Hidden Fees</div>
-        </div>
-        <div class="stat-card stat-card--wide reveal d4">
-          <div class="stat-value">Licensed · Bonded · Insured</div>
-          <div class="stat-label">UBI 606-215-365</div>
+        <div class="stat-box reveal d4">
+          <div class="stat-val">100%</div>
+          <div class="stat-label">Satisfaction Guaranteed</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
-<section class="section section--alt" id="services">
+<!-- ================================================================
+     RESIDENTIAL SERVICES
+================================================================ -->
+<section class="section" id="services">
   <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">What We Do</span>
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-sub">Professional cleaning tailored to your home or business — done right, every time.</p>
+    <div class="tc">
+      <span class="eyebrow">Residential</span>
+      <h2 class="section-title">Residential Cleaning Services</h2>
+      <p class="section-sub">Professional home cleaning tailored to your schedule and standards. Same trusted crew, every time.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">🔄</div>
+      <div class="card reveal">
+        <div class="card-icon">🔄</div>
         <h3>Recurring Cleans</h3>
-        <p>Weekly, bi-weekly, or monthly service with the same trusted crew. We maintain your space so you never have to think about it. Starting at $145/visit.</p>
+        <p>Weekly, bi-weekly, or monthly. Same crew every time — no strangers at your door. We maintain your home to a consistent, high standard.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>1 Bedroom</span><span class="price-val">$145</span></div>
+          <div class="price-row"><span>2 Bedrooms</span><span class="price-val">$185</span></div>
+          <div class="price-row"><span>3 Bedrooms</span><span class="price-val">$230</span></div>
+          <div class="price-row"><span>4 Bedrooms</span><span class="price-val">$260</span></div>
+        </div>
       </div>
-      <div class="service-card reveal d1">
-        <div class="service-icon">✨</div>
-        <h3>Deep Cleans</h3>
-        <p>A thorough top-to-bottom clean covering every surface, corner, and fixture. Ideal for a full reset or seasonal refresh. Starting at $325.</p>
+      <div class="card reveal d1">
+        <div class="card-icon">🏁</div>
+        <h3>First-Time Clean</h3>
+        <p>Required before recurring service begins. Brings your home to a baseline standard so every future visit is efficient and thorough.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Flat Rate</span><span class="price-val">$375</span></div>
+        </div>
       </div>
-      <div class="service-card reveal d2">
-        <div class="service-icon">📦</div>
+      <div class="card reveal d2">
+        <div class="card-icon">✨</div>
+        <h3>Deep Clean</h3>
+        <p>Thorough top-to-bottom clean for an occasional refresh. Every surface, corner, and fixture gets detailed attention.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Flat Rate</span><span class="price-val">$325</span></div>
+        </div>
+      </div>
+      <div class="card reveal d3">
+        <div class="card-icon">📦</div>
         <h3>Move-In / Move-Out</h3>
-        <p>Leave your old place spotless or start fresh in your new home. We handle everything so you can focus on the move. Starting at $425.</p>
+        <p>Get a property fully cleaned for transition. We handle everything so you can focus on the move itself.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Range (size dependent)</span><span class="price-val">$325–$525</span></div>
+        </div>
       </div>
-      <div class="service-card reveal d3">
-        <div class="service-icon">🏢</div>
-        <h3>Commercial Cleaning</h3>
-        <p>Keep your office, retail space, or facility clean and professional. We work around your hours to minimize disruption.</p>
+      <div class="card reveal d4">
+        <div class="card-icon">🔨</div>
+        <h3>Post-Renovation</h3>
+        <p>Dust and debris removal after construction or remodeling. We restore your space to livable, sparkling condition.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Range</span><span class="price-val">$350–$425</span></div>
+        </div>
       </div>
-      <div class="service-card reveal d4">
-        <div class="service-icon">🍽️</div>
-        <h3>Restaurant Deep Cleans</h3>
-        <p>Kitchen and dining cleans that meet health code standards. Grease, buildup, and grime removed with professional-grade results.</p>
+      <div class="card reveal d5">
+        <div class="card-icon">🏡</div>
+        <h3>Pre-Sale Clean</h3>
+        <p>Get your home listing-ready for showings. First impressions matter — we make sure yours is spotless.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Range</span><span class="price-val">$375–$525</span></div>
+        </div>
       </div>
-      <div class="service-card reveal d5">
-        <div class="service-icon">⭐</div>
-        <h3>Specialty Services</h3>
-        <p>Post-construction cleanup, event prep, and custom cleaning solutions. Contact us to discuss your needs and get a tailored quote.</p>
+      <div class="card reveal d1">
+        <div class="card-icon">🌸</div>
+        <h3>Spring Clean</h3>
+        <p>Seasonal deep refresh for your home. Perfect for resetting after winter or preparing for a new season.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Range</span><span class="price-val">$325–$425</span></div>
+        </div>
+      </div>
+      <div class="card reveal d2">
+        <div class="card-icon">🏖️</div>
+        <h3>Vacation Rental Turnover</h3>
+        <p>Fast, reliable between-guest cleans for Airbnb and VRBO properties. We keep your ratings high.</p>
+        <div class="card-prices">
+          <div class="price-row"><span>Range</span><span class="price-val">$175–$350</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CALCULATOR ===== -->
-<section class="section" id="calculator">
+<!-- ================================================================
+     PRICE CALCULATOR
+================================================================ -->
+<section class="section section-alt" id="calculator">
   <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">Instant Estimate</span>
-      <h2 class="section-title">Price Calculator</h2>
-      <p class="section-sub">Get a ballpark quote in seconds — no obligation, no email required.</p>
+    <div class="tc">
+      <span class="eyebrow">Instant Estimate</span>
+      <h2 class="section-title">Get an Instant Estimate</h2>
+      <p class="section-sub">Build your custom quote in seconds — no obligation, no email required.</p>
     </div>
     <div class="calc-wrap">
-
-      <!-- Left: Inputs -->
+      <!-- Inputs -->
       <div class="calc-panel">
-        <div class="calc-panel-title">Configure Your Clean</div>
+        <div class="calc-panel-title">Build Your Quote</div>
 
-        <div class="f-group">
-          <label class="f-label" for="svc-select">Service Type</label>
-          <select class="f-select" id="svc-select">
-            <option value="">Select a service...</option>
+        <div class="calc-step">
+          <div class="calc-step-label"><span class="calc-step-num">1</span> Select Service</div>
+          <select class="f-select" id="calc-svc">
+            <option value="">Choose a service...</option>
             <optgroup label="Recurring Cleans">
               <option value="145">Recurring — 1 Bedroom ($145)</option>
               <option value="185">Recurring — 2 Bedrooms ($185)</option>
               <option value="230">Recurring — 3 Bedrooms ($230)</option>
               <option value="260">Recurring — 4 Bedrooms ($260)</option>
             </optgroup>
-            <optgroup label="Other Services">
+            <optgroup label="One-Time Services">
               <option value="375">First-Time Clean ($375)</option>
               <option value="325">Deep Clean ($325)</option>
               <option value="425">Move-Out Clean ($425)</option>
+              <option value="425">Move-In Clean ($425)</option>
+              <option value="375">Spring Clean ($375)</option>
+              <option value="250">Vacation Rental Turnover ($250)</option>
             </optgroup>
           </select>
         </div>
 
-        <div class="f-group">
-          <label class="f-label">Add-Ons</label>
+        <div class="calc-step">
+          <div class="calc-step-label"><span class="calc-step-num">2</span> Add-Ons</div>
           <div class="addons-grid">
             <label class="addon-label">
-              <input type="checkbox" class="addon" data-price="40" data-name="Fridge Cleaning" />
+              <input type="checkbox" class="calc-addon" data-price="40" data-name="Inside Fridge" />
               <span class="addon-box"></span>
-              Fridge Cleaning
-              <span class="addon-price">+$40</span>
+              Inside Fridge <span class="addon-price">+$40</span>
             </label>
             <label class="addon-label">
-              <input type="checkbox" class="addon" data-price="35" data-name="Oven Cleaning" />
+              <input type="checkbox" class="calc-addon" data-price="35" data-name="Inside Oven" />
               <span class="addon-box"></span>
-              Oven Cleaning
-              <span class="addon-price">+$35</span>
+              Inside Oven <span class="addon-price">+$35</span>
             </label>
             <label class="addon-label">
-              <input type="checkbox" class="addon" data-price="30" data-name="Interior Windows" />
+              <input type="checkbox" class="calc-addon" data-price="30" data-name="Interior Windows" />
               <span class="addon-box"></span>
-              Interior Windows
-              <span class="addon-price">+$30</span>
+              Interior Windows <span class="addon-price">+$30</span>
             </label>
             <label class="addon-label">
-              <input type="checkbox" class="addon" data-price="40" data-name="Garage Sweep" />
+              <input type="checkbox" class="calc-addon" data-price="40" data-name="Garage Sweep" />
               <span class="addon-box"></span>
-              Garage Sweep
-              <span class="addon-price">+$40</span>
+              Garage Sweep <span class="addon-price">+$40</span>
             </label>
             <label class="addon-label">
-              <input type="checkbox" class="addon" data-price="25" data-name="Pet Hair Treatment" />
+              <input type="checkbox" class="calc-addon" data-price="25" data-name="Pet Hair Treatment" />
               <span class="addon-box"></span>
-              Pet Hair Treatment
-              <span class="addon-price">+$25</span>
+              Pet Hair Treatment <span class="addon-price">+$25</span>
+            </label>
+            <label class="addon-label" style="opacity:0.55;cursor:default;">
+              <input type="checkbox" disabled />
+              <span class="addon-box"></span>
+              Exterior Windows <span class="addon-price" style="color:var(--tm);">Quote</span>
+            </label>
+            <label class="addon-label" style="opacity:0.55;cursor:default;">
+              <input type="checkbox" disabled />
+              <span class="addon-box"></span>
+              Inside Cabinets <span class="addon-price" style="color:var(--tm);">Quote</span>
             </label>
           </div>
         </div>
 
-        <div class="discount-row" id="discount-toggle">
-          <div>
-            <div class="discount-label">🎉 Apply Launch Discount</div>
-            <div class="discount-sub">15% off — first 10 customers only</div>
+        <div class="calc-step">
+          <div class="calc-step-label"><span class="calc-step-num">3</span> Launch Discount</div>
+          <div class="discount-row" id="discount-toggle">
+            <div>
+              <div class="discount-lbl">Apply 15% Launch Discount</div>
+              <div class="discount-sub">First 10 customers only</div>
+            </div>
+            <div class="toggle-sw" id="toggle-knob"></div>
           </div>
-          <div class="toggle" id="toggle-knob"></div>
         </div>
       </div>
 
-      <!-- Right: Result -->
+      <!-- Result -->
       <div class="calc-result">
-        <div class="calc-result-heading">Your Estimate</div>
-        <div id="price-block">
+        <div class="calc-result-title">Your Estimate</div>
+        <div class="price-display">
           <div class="price-label" id="price-label">Select a service to begin</div>
-          <div class="price-main" id="price-main">—</div>
+          <div class="price-original" id="price-orig">—</div>
           <div class="price-discounted" id="price-disc"></div>
           <div class="price-badge" id="price-badge">15% OFF Applied</div>
         </div>
-        <div class="breakdown" id="breakdown">
-          <div class="b-row" id="b-service"><span>Service</span><span>—</span></div>
+        <div class="calc-breakdown" id="calc-breakdown">
+          <div class="b-row" id="b-svc"><span>Service</span><span>—</span></div>
           <div id="b-addons"></div>
-          <div class="b-row discount-line" id="b-discount"><span>Launch Discount (15%)</span><span id="b-disc-amt">—</span></div>
+          <div class="b-row disc-line" id="b-disc"><span>Launch Discount (15%)</span><span id="b-disc-amt">—</span></div>
           <div class="b-row total"><span>Estimated Total</span><span id="b-total">—</span></div>
         </div>
-        <p class="calc-note">Prices are estimates. Final quote confirmed before any work begins. Sales tax may apply.</p>
-        <button class="btn btn--gold btn--full" id="book-btn" disabled>Book This Quote</button>
+        <p class="calc-note">Estimates are starting prices. Final quote confirmed before any work begins. Sales tax may apply.</p>
+        <button class="btn btn-gold btn-full" id="book-btn" disabled>Book This Quote</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== COMMERCIAL ===== -->
-<div class="commercial-divider"></div>
-<section class="section commercial" id="commercial">
+<!-- ================================================================
+     COMMERCIAL SERVICES
+================================================================ -->
+<section class="section" id="commercial">
   <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">Commercial Services</span>
+    <div class="tc">
+      <span class="eyebrow">Commercial</span>
       <h2 class="section-title">Commercial Cleaning Services</h2>
-      <p class="section-sub">Reliable cleaning for offices, restaurants, and property managers across Longview and Kelso</p>
+      <p class="section-sub">Reliable cleaning for offices, restaurants, and property managers across Longview and Kelso.</p>
     </div>
-
     <div class="comm-grid">
       <div class="comm-card reveal">
         <h3>Small Office Cleaning</h3>
@@ -1320,7 +1458,7 @@
       </div>
       <div class="comm-card reveal d3">
         <h3>Restaurant Deep Cleans</h3>
-        <p>After-hours deep cleaning — hood vents, behind equipment, floor drains, walk-in cooler, and bathrooms. We work around your dinner service.</p>
+        <p>After-hours deep cleaning — hood vents, behind equipment, floor drains, kitchen floors, walk-in cooler, and bathrooms. We work around your dinner service.</p>
         <div class="comm-prices">
           <div class="comm-price-row"><span>Per clean</span><span class="comm-price-val">$1,000–$1,500</span></div>
         </div>
@@ -1352,11 +1490,11 @@
 
     <div class="who-serve reveal">
       <div class="who-serve-title">Who We Serve</div>
-      <div class="who-serve-list">
+      <div class="who-list">
         <span class="who-pill">🏢 Property Managers</span>
         <span class="who-pill">🏡 Real Estate Agents</span>
         <span class="who-pill">🍽️ Restaurant Owners</span>
-        <span class="who-pill">💼 Small Business Owners</span>
+        <span class="who-pill">💼 Small Businesses</span>
         <span class="who-pill">🗂️ Office Managers</span>
         <span class="who-pill">🏠 Apartment Complexes</span>
       </div>
@@ -1364,17 +1502,17 @@
 
     <div class="comm-form-panel reveal">
       <div class="comm-form-title">Request a Commercial Quote</div>
-      <p class="comm-form-sub">Tell us about your space and we'll respond with a custom quote — usually same day.</p>
+      <p class="comm-form-sub">Tell us about your space — we'll respond with a custom quote, usually same day.</p>
       <div class="form-success" id="comm-success">
         <div class="form-success-icon">✅</div>
         <strong>Quote Request Received!</strong>
-        <p>We'll be in touch within 24 hours with a custom quote.</p>
+        <p>Gunner will be in touch within a few hours with a custom quote.</p>
       </div>
       <form id="comm-form">
         <div class="f-row">
           <div class="f-group">
             <label class="f-label" for="cm-biz">Business Name</label>
-            <input class="f-input" type="text" id="cm-biz" placeholder="Your business name" required />
+            <input class="f-input" type="text" id="cm-biz" placeholder="Your business" required />
           </div>
           <div class="f-group">
             <label class="f-label" for="cm-name">Contact Name</label>
@@ -1393,36 +1531,31 @@
         </div>
         <div class="f-row">
           <div class="f-group">
-            <label class="f-label" for="cm-type">Type of Business</label>
+            <label class="f-label" for="cm-type">Business Type</label>
             <select class="f-select" id="cm-type">
               <option value="">Select type...</option>
-              <option>Office / Professional Services</option>
-              <option>Restaurant / Food Service</option>
-              <option>Property Management</option>
-              <option>Real Estate</option>
+              <option>Office</option>
+              <option>Restaurant</option>
               <option>Retail</option>
               <option>Medical / Dental</option>
-              <option>Construction / New Build</option>
+              <option>Property Management</option>
               <option>Other</option>
             </select>
           </div>
           <div class="f-group">
-            <label class="f-label" for="cm-sqft">Approximate Square Footage</label>
+            <label class="f-label" for="cm-sqft">Approx. Square Footage</label>
             <input class="f-input" type="text" id="cm-sqft" placeholder="e.g. 2,500 sq ft" />
           </div>
         </div>
         <div class="f-row">
           <div class="f-group">
-            <label class="f-label" for="cm-svc">Service Interest</label>
+            <label class="f-label" for="cm-svc">Service Type</label>
             <select class="f-select" id="cm-svc">
               <option value="">Select...</option>
               <option>Recurring Cleaning</option>
-              <option>One-Time / Deep Clean</option>
-              <option>Move-Out / Turnover</option>
-              <option>Restaurant Deep Clean</option>
-              <option>Post-Construction</option>
-              <option>Pre-Sale / Realtor Clean</option>
-              <option>Not Sure — Need a Walkthrough</option>
+              <option>One-Time Clean</option>
+              <option>Deep Clean</option>
+              <option>Walkthrough Request</option>
             </select>
           </div>
           <div class="f-group">
@@ -1436,7 +1569,7 @@
             </select>
           </div>
         </div>
-        <button type="submit" class="btn btn--gold btn--full">Request Commercial Quote</button>
+        <button type="submit" class="btn btn-gold btn-full">Request Commercial Quote</button>
       </form>
     </div>
 
@@ -1445,104 +1578,219 @@
       <div class="trust-badge">👥 Same Crew Every Visit</div>
       <div class="trust-badge">🌙 After-Hours Availability</div>
       <div class="trust-badge">⚡ Free Walkthroughs &amp; Same-Day Quotes</div>
-      <div class="trust-badge">📍 Locally Owned in Longview, WA</div>
+      <div class="trust-badge">📍 Locally Owned — Longview, WA</div>
     </div>
   </div>
 </section>
 
-<!-- ===== WHY CHOOSE US ===== -->
-<section class="section section--alt" id="why">
+<!-- ================================================================
+     WHY CHOOSE US
+================================================================ -->
+<section class="section section-alt" id="why">
   <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">Why I-5 Cleaning</span>
-      <h2 class="section-title">The I-5 Difference</h2>
-      <p class="section-sub">We don't just clean — we earn your trust, visit after visit.</p>
+    <div class="tc">
+      <span class="eyebrow">The I-5 Difference</span>
+      <h2 class="section-title">Why Choose I-5 Cleaning</h2>
+      <p class="section-sub">We don't just clean — we earn your trust, every single visit.</p>
     </div>
     <div class="why-grid">
       <div class="why-card reveal">
-        <div class="why-icon">👥</div>
+        <div class="why-icon">🏠</div>
         <h3>Same Crew Every Visit</h3>
-        <p>Know who's coming. Build real trust over time. No strangers, no surprises.</p>
+        <p>Know who's coming. Build real trust over time. No strangers, no surprises — ever.</p>
       </div>
       <div class="why-card reveal d1">
         <div class="why-icon">⚡</div>
-        <h3>Fast Response</h3>
-        <p>We respond within 24 hours and schedule around your life.</p>
+        <h3>Fast Response Within 1 Hour</h3>
+        <p>We respond to inquiries within 1 hour and schedule around your life.</p>
       </div>
       <div class="why-card reveal d2">
         <div class="why-icon">✅</div>
-        <h3>Satisfaction Guarantee</h3>
-        <p>Not happy? We'll come back and make it right — no questions asked.</p>
+        <h3>Satisfaction Guaranteed</h3>
+        <p>Not happy with any part of your clean? We'll come back and make it right. No questions asked.</p>
       </div>
       <div class="why-card reveal d3">
         <div class="why-icon">💳</div>
-        <h3>Card-on-File Billing</h3>
-        <p>Secure, hassle-free automatic billing after every visit.</p>
+        <h3>Card On File Billing</h3>
+        <p>Secure, automatic billing after every visit. No chasing invoices, no hassle for either of us.</p>
       </div>
       <div class="why-card reveal d4">
+        <div class="why-icon">🛡️</div>
+        <h3>Licensed, Bonded &amp; Insured</h3>
+        <p>Full coverage on every visit. UBI 606-215-365. Your home and peace of mind are protected.</p>
+      </div>
+      <div class="why-card reveal d5">
         <div class="why-icon">📍</div>
-        <h3>Locally Owned</h3>
-        <p>We live here too. This community matters to us.</p>
+        <h3>Locally Owned in Longview</h3>
+        <p>We live here too. This community matters to us, and that shows in how we work.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="section" id="contact">
+<!-- ================================================================
+     SERVICE AREA
+================================================================ -->
+<section class="section" id="area">
   <div class="container">
-    <div class="text-center">
-      <span class="section-eyebrow">Get In Touch</span>
-      <h2 class="section-title">Ready for a Cleaner Space?</h2>
-      <p class="section-sub">Reach out — we'll respond within 24 hours and get you scheduled.</p>
+    <div class="tc">
+      <span class="eyebrow">Coverage</span>
+      <h2 class="section-title">Where We Serve</h2>
+      <p class="section-sub">Proudly serving homes and businesses across Cowlitz County and surrounding areas.</p>
+    </div>
+    <div class="area-cities">
+      <span class="area-city">📍 Longview</span>
+      <span class="area-city">📍 Kelso</span>
+      <span class="area-city">📍 Castle Rock</span>
+      <span class="area-city">📍 Kalama</span>
+      <span class="area-city">📍 Cathlamet</span>
+      <span class="area-city">📍 Surrounding Cowlitz County</span>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-123.1%2C46.05%2C-122.75%2C46.25&layer=mapnik&marker=46.1382%2C-122.9382"
+        frameborder="0"
+        loading="lazy"
+        title="I-5 Cleaning service area — Longview &amp; Kelso, WA"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     REVIEWS
+================================================================ -->
+<section class="section section-alt" id="reviews">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Client Reviews</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-sub">Real feedback from real people. We just launched — reviews are coming in.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Gunner and his crew were punctual, professional, and incredibly thorough. My house has never looked this clean. I booked them for recurring bi-weekly and couldn't be happier."</p>
+        <div class="review-author">Sarah M.</div>
+        <div class="review-date">Longview, WA — May 2026</div>
+      </div>
+      <div class="review-card reveal d1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Used I-5 Cleaning for a move-out clean. They got our full deposit back — the place was spotless. Fast response, fair price, and genuinely great work."</p>
+        <div class="review-author">Jake &amp; Amber T.</div>
+        <div class="review-date">Kelso, WA — May 2026</div>
+      </div>
+      <div class="review-placeholder reveal d2">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">⭐</div>
+        <p><strong style="color:var(--ts);display:block;margin-bottom:0.4rem;">Your Review Here</strong>We just launched May 2026. Be one of our first clients and share your experience!</p>
+        <a href="https://www.google.com/search?q=I-5+Cleaning+LLC+Longview+WA" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:1rem;">Leave a Review</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="https://www.google.com/search?q=I-5+Cleaning+LLC+Longview+WA" target="_blank" rel="noopener" class="btn btn-ghost">View Google Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FAQ
+================================================================ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know before booking.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">How do I book a cleaning?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>The easiest way is to use our Price Calculator above to build your quote, then click "Book This Quote" — or simply call or text us at (360) 822-8539. We'll confirm your service, walk through your home's needs, and get you scheduled fast.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do I need to be home during the cleaning?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>No — most of our clients prefer not to be home. We work with key lockboxes or door codes so you don't have to rearrange your day. Whatever makes you comfortable works for us.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's included in a recurring clean?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Every recurring clean includes all living areas, bedrooms, bathrooms, kitchen surfaces, floors (vacuumed and mopped), and taking out trash. We work from a consistent checklist so nothing gets missed. Add-ons like oven cleaning or fridge cleaning can be added at any time.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does payment work?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>We use secure card-on-file billing — your card is charged automatically after each visit. No chasing invoices, no cash needed. We accept all major credit and debit cards.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's your cancellation policy?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>We ask for 24 hours notice if you need to cancel or reschedule. Life happens — we get it. Just reach out as soon as you know and we'll make it work. Same-day cancellations may be subject to a small fee.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you really licensed, bonded, and insured?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes — fully. I-5 Cleaning LLC is licensed in Washington State (UBI 606-215-365), bonded, and carries full liability insurance. You can request proof of insurance at any time before your first appointment.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you provide your own supplies?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes — we bring everything we need. Professional-grade cleaning products and equipment are included in every job. If you have a product preference or sensitivity (scent-free, pet-safe, etc.), just let us know and we'll accommodate.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Same crew every visit — really?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes, really. This is one of our core commitments. We believe trust is built through consistency — knowing who's coming, knowing they know your home, knowing they'll do it right. We don't rotate strangers through. Your crew is your crew.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT
+================================================================ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Ready for a cleaner space? We respond within 1 hour.</p>
     </div>
     <div class="contact-grid">
-      <div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <span class="contact-icon">📞</span>
-            <div class="contact-copy">
-              <strong>Phone</strong>
-              <a href="tel:+13608228539">(360) 822-8539</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">✉️</span>
-            <div class="contact-copy">
-              <strong>Email</strong>
-              <a href="mailto:gunner@i5cleaning.com">gunner@i5cleaning.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div class="contact-copy">
-              <strong>Service Area</strong>
-              <span>Longview, Kelso &amp; surrounding areas</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">🕐</span>
-            <div class="contact-copy">
-              <strong>Hours</strong>
-              <span>Open 24 / 7</span>
-            </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div class="contact-copy">
+            <strong>Phone</strong>
+            <a href="tel:+13608228539">(360) 822-8539</a>
           </div>
         </div>
-        <div class="map-wrap">
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-123.1%2C46.05%2C-122.75%2C46.25&layer=mapnik&marker=46.1382%2C-122.9382"
-            frameborder="0"
-            loading="lazy"
-            title="I-5 Cleaning service area — Longview &amp; Kelso, WA"
-          ></iframe>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-copy">
+            <strong>Email</strong>
+            <a href="mailto:gunner@i5cleaning.com">gunner@i5cleaning.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🕐</span>
+          <div class="contact-copy">
+            <strong>Business Hours</strong>
+            <span>Monday – Saturday: 8am – 6pm</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div class="contact-copy">
+            <strong>Service Area</strong>
+            <span>Longview, Kelso &amp; surrounding Cowlitz County</span>
+          </div>
+        </div>
+        <div style="margin-top:0.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="https://www.facebook.com/share/1B7R2uLakz/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Facebook</a>
+          <a href="https://www.instagram.com/i5cleaning?igsh=YzM3dnBja3Jrbm5p&utm_source=qr" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Instagram</a>
         </div>
       </div>
-      <div class="form-panel">
-        <div class="form-panel-title">Send Us a Message</div>
+      <div class="form-panel" id="contact-form-wrap">
+        <div class="form-panel-title">Send a Message</div>
         <div class="form-success" id="contact-success">
           <div class="form-success-icon">✅</div>
           <strong>Message Sent!</strong>
-          <p>We'll be in touch within 24 hours.</p>
+          <p>Gunner will be in touch within 1 hour during business hours.</p>
         </div>
         <form id="contact-form">
           <div class="f-row">
@@ -1560,48 +1808,39 @@
             <input class="f-input" type="email" id="c-email" placeholder="your@email.com" required />
           </div>
           <div class="f-group">
-            <label class="f-label" for="c-service">Service Interested In</label>
-            <select class="f-select" id="c-service">
-              <option value="">Select a service...</option>
-              <option>Recurring Clean</option>
-              <option>Deep Clean</option>
-              <option>Move-In / Move-Out</option>
-              <option>Commercial Cleaning</option>
-              <option>Restaurant Deep Clean</option>
-              <option>Specialty Service</option>
-            </select>
-          </div>
-          <div class="f-group">
             <label class="f-label" for="c-msg">Message</label>
-            <textarea class="f-textarea" id="c-msg" placeholder="Tell us about your space and what you need..."></textarea>
+            <textarea class="f-textarea" id="c-msg" placeholder="Tell us about your space and what you need..." style="min-height:110px;"></textarea>
           </div>
-          <button type="submit" class="btn btn--gold btn--full">Send Message</button>
+          <button type="submit" class="btn btn-gold btn-full">Send Message</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- ================================================================
+     FOOTER
+================================================================ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div style="display:flex;align-items:center;gap:0.75rem;">
-          <img src="logo.png" alt="I-5 Cleaning LLC" style="height:48px;width:auto;border-radius:6px;" />
+        <div class="footer-brand-logo">
+          <img src="logo.png" alt="I-5 Cleaning LLC" />
           <div>
-            <div class="logo-primary">I-5 Cleaning LLC</div>
-            <div class="logo-secondary" style="margin-top:0.2rem;">Clean Spaces. High Standards.</div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--gold);">I-5 Cleaning LLC</div>
+            <div style="font-size:0.62rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--silver);">Longview, WA</div>
           </div>
         </div>
-        <p>Locally owned and operated in Longview, WA.<br />Licensed · Bonded · Insured · UBI 606-215-365</p>
+        <p>Locally owned and operated in Longview, WA.<br />Licensed · Bonded · Insured<br />UBI 606-215-365</p>
       </div>
       <nav class="footer-nav">
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#calculator">Pricing</a>
         <a href="#commercial">Commercial</a>
-        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="footer-right">
@@ -1610,7 +1849,6 @@
           <a href="https://www.instagram.com/i5cleaning?igsh=YzM3dnBja3Jrbm5p&utm_source=qr" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a href="#" class="social-link" aria-label="Google Business">G</a>
         </div>
         <div class="footer-contact-mini">
           <a href="tel:+13608228539">(360) 822-8539</a><br />
@@ -1619,26 +1857,28 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 I-5 Cleaning LLC. All rights reserved.</p>
-      <p>UBI 606-215-365 · Longview, WA</p>
+      <p>&copy; 2026 I-5 Cleaning LLC · UBI 606-215-365 · Longview, WA</p>
+      <p class="footer-tagline">Clean Spaces. High Standards.</p>
     </div>
   </div>
 </footer>
 
-<!-- ===== BOOK QUOTE MODAL ===== -->
+<!-- ================================================================
+     BOOK QUOTE MODAL
+================================================================ -->
 <div class="overlay" id="modal-overlay">
   <div class="modal">
     <button class="modal-close" id="modal-close">✕</button>
     <div class="modal-title">Book Your Clean</div>
-    <p class="modal-sub">We'll confirm your quote and reach out within 24 hours.</p>
+    <p class="modal-sub">We'll confirm your quote and reach out within 1 hour.</p>
     <div class="modal-quote-bar">
-      <span class="modal-quote-svc" id="modal-svc-label">Selected service</span>
+      <span class="modal-quote-svc" id="modal-svc">Selected service</span>
       <span class="modal-quote-amt" id="modal-amt">$0</span>
     </div>
     <div class="form-success" id="modal-success">
       <div class="form-success-icon">✅</div>
-      <strong>Request Received!</strong>
-      <p>We'll reach out within 24 hours to confirm your booking.</p>
+      <strong>Booking Request Sent!</strong>
+      <p>Gunner will reach out within 1 hour to confirm your appointment.</p>
     </div>
     <form id="modal-form">
       <div class="f-row">
@@ -1659,167 +1899,186 @@
         <label class="f-label" for="m-notes">Notes (optional)</label>
         <textarea class="f-textarea" id="m-notes" placeholder="Anything we should know about your space?" style="min-height:70px;"></textarea>
       </div>
-      <button type="submit" class="btn btn--gold btn--full">Request Booking</button>
+      <button type="submit" class="btn btn-gold btn-full">Confirm Booking Request</button>
     </form>
   </div>
 </div>
 
 <script>
-  // NAV
+  // ============================================================
+  // HEADER SCROLL
+  // ============================================================
   const header = document.getElementById('header');
-  const navToggle = document.getElementById('nav-toggle');
-  const navLinks = document.getElementById('nav-links');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20), {passive:true});
 
-  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+  // ============================================================
+  // MOBILE NAV
+  // ============================================================
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks  = document.getElementById('nav-links');
   navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
+  // ============================================================
   // SCROLL REVEAL
-  const revealObs = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } }),
+  // ============================================================
+  const revObs = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revObs.unobserve(e.target); } }),
     { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
   );
-  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
+  // ============================================================
   // CALCULATOR
-  const svcSelect   = document.getElementById('svc-select');
-  const addons      = document.querySelectorAll('.addon');
-  const discToggle  = document.getElementById('discount-toggle');
-  const toggleKnob  = document.getElementById('toggle-knob');
-  const priceMain   = document.getElementById('price-main');
-  const priceDisc   = document.getElementById('price-disc');
-  const priceBadge  = document.getElementById('price-badge');
-  const priceLabel  = document.getElementById('price-label');
-  const breakdown   = document.getElementById('breakdown');
-  const bService    = document.getElementById('b-service');
-  const bAddons     = document.getElementById('b-addons');
-  const bDiscount   = document.getElementById('b-discount');
-  const bDiscAmt    = document.getElementById('b-disc-amt');
-  const bTotal      = document.getElementById('b-total');
-  const bookBtn     = document.getElementById('book-btn');
-
+  // ============================================================
+  const calcSvc    = document.getElementById('calc-svc');
+  const addons     = document.querySelectorAll('.calc-addon');
+  const discToggle = document.getElementById('discount-toggle');
+  const toggleKnob = document.getElementById('toggle-knob');
+  const priceOrig  = document.getElementById('price-orig');
+  const priceDisc  = document.getElementById('price-disc');
+  const priceBadge = document.getElementById('price-badge');
+  const priceLabel = document.getElementById('price-label');
+  const breakdown  = document.getElementById('calc-breakdown');
+  const bSvc       = document.getElementById('b-svc');
+  const bAddons    = document.getElementById('b-addons');
+  const bDisc      = document.getElementById('b-disc');
+  const bDiscAmt   = document.getElementById('b-disc-amt');
+  const bTotal     = document.getElementById('b-total');
+  const bookBtn    = document.getElementById('book-btn');
   let discOn = false;
 
-  discToggle.addEventListener('click', () => {
-    discOn = !discOn;
-    toggleKnob.classList.toggle('on', discOn);
-    calc();
-  });
-  svcSelect.addEventListener('change', calc);
-  addons.forEach(a => a.addEventListener('change', calc));
+  discToggle.addEventListener('click', () => { discOn = !discOn; toggleKnob.classList.toggle('on', discOn); runCalc(); });
+  calcSvc.addEventListener('change', runCalc);
+  addons.forEach(a => a.addEventListener('change', runCalc));
 
-  function calc() {
-    const base = parseInt(svcSelect.value) || 0;
-    const svcText = svcSelect.options[svcSelect.selectedIndex]?.text || '';
-    const addonSum = [...addons].filter(a => a.checked).reduce((s, a) => s + parseInt(a.dataset.price), 0);
+  function runCalc() {
+    const base = parseInt(calcSvc.value) || 0;
+    const svcText = calcSvc.options[calcSvc.selectedIndex]?.text || '';
+    const addonSum = [...addons].filter(a => a.checked).reduce((s,a) => s + parseInt(a.dataset.price), 0);
     const subtotal = base + addonSum;
-
     if (!base) {
-      priceMain.textContent = '—';
-      priceMain.className = 'price-main';
-      priceDisc.style.display = 'none';
-      priceBadge.style.display = 'none';
+      priceOrig.textContent = '—'; priceOrig.className = 'price-original';
+      priceDisc.style.display = 'none'; priceBadge.style.display = 'none';
       priceLabel.textContent = 'Select a service to begin';
-      breakdown.style.display = 'none';
-      bookBtn.disabled = true;
-      return;
+      breakdown.style.display = 'none'; bookBtn.disabled = true; return;
     }
-
     const disc = discOn ? Math.round(subtotal * 0.15) : 0;
     const total = subtotal - disc;
-
     if (discOn) {
-      priceMain.className = 'price-main struck';
-      priceMain.textContent = `$${subtotal}`;
-      priceDisc.style.display = 'block';
-      priceDisc.textContent = `$${total}`;
+      priceOrig.className = 'price-original struck'; priceOrig.textContent = '$' + subtotal;
+      priceDisc.style.display = 'block'; priceDisc.textContent = '$' + total;
       priceBadge.style.display = 'inline-block';
       priceLabel.textContent = 'After 15% launch discount';
     } else {
-      priceMain.className = 'price-main';
-      priceMain.textContent = `$${subtotal}`;
-      priceDisc.style.display = 'none';
-      priceBadge.style.display = 'none';
+      priceOrig.className = 'price-original'; priceOrig.textContent = '$' + subtotal;
+      priceDisc.style.display = 'none'; priceBadge.style.display = 'none';
       priceLabel.textContent = 'Estimated price';
     }
-
-    // Breakdown rows
-    bService.children[0].textContent = svcText.split('(')[0].trim();
-    bService.children[1].textContent = `$${base}`;
+    bSvc.children[0].textContent = svcText.split('(')[0].trim();
+    bSvc.children[1].textContent = '$' + base;
     bAddons.innerHTML = '';
     addons.forEach(a => {
       if (a.checked) {
-        const row = document.createElement('div');
-        row.className = 'b-row';
+        const row = document.createElement('div'); row.className = 'b-row';
         row.innerHTML = `<span>${a.dataset.name}</span><span>+$${a.dataset.price}</span>`;
         bAddons.appendChild(row);
       }
     });
-    if (discOn) {
-      bDiscount.style.display = 'flex';
-      bDiscAmt.textContent = `-$${disc}`;
-    } else {
-      bDiscount.style.display = 'none';
-    }
-    bTotal.textContent = `$${total}`;
+    if (discOn) { bDisc.style.display = 'flex'; bDiscAmt.textContent = '-$' + disc; }
+    else bDisc.style.display = 'none';
+    bTotal.textContent = '$' + total;
     breakdown.style.display = 'block';
     bookBtn.disabled = false;
   }
 
+  // ============================================================
   // MODAL
-  const overlay    = document.getElementById('modal-overlay');
-  const modalClose = document.getElementById('modal-close');
-  const modalSvc   = document.getElementById('modal-svc-label');
-  const modalAmt   = document.getElementById('modal-amt');
-  const modalForm  = document.getElementById('modal-form');
-  const modalSucc  = document.getElementById('modal-success');
+  // ============================================================
+  const overlay   = document.getElementById('modal-overlay');
+  const modalClose= document.getElementById('modal-close');
+  const modalSvc  = document.getElementById('modal-svc');
+  const modalAmt  = document.getElementById('modal-amt');
+  const modalForm = document.getElementById('modal-form');
+  const modalSucc = document.getElementById('modal-success');
 
   bookBtn.addEventListener('click', () => {
-    const base = parseInt(svcSelect.value) || 0;
-    const addonSum = [...addons].filter(a => a.checked).reduce((s, a) => s + parseInt(a.dataset.price), 0);
+    const base = parseInt(calcSvc.value) || 0;
+    const addonSum = [...addons].filter(a => a.checked).reduce((s,a) => s + parseInt(a.dataset.price), 0);
     const subtotal = base + addonSum;
     const total = discOn ? subtotal - Math.round(subtotal * 0.15) : subtotal;
-    const svcText = svcSelect.options[svcSelect.selectedIndex]?.text.split('(')[0].trim() || '';
+    const svcText = calcSvc.options[calcSvc.selectedIndex]?.text.split('(')[0].trim() || '';
     modalSvc.textContent = svcText + (discOn ? ' — 15% off' : '');
-    modalAmt.textContent = `$${total}`;
-    modalForm.style.display = 'block';
-    modalSucc.classList.remove('show');
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    modalAmt.textContent = '$' + total;
+    modalForm.style.display = 'block'; modalSucc.classList.remove('show');
+    overlay.classList.add('open'); document.body.style.overflow = 'hidden';
   });
 
-  function closeModal() {
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
+  function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
   modalClose.addEventListener('click', closeModal);
   overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
   modalForm.addEventListener('submit', e => {
-    e.preventDefault();
-    modalForm.style.display = 'none';
-    modalSucc.classList.add('show');
-    setTimeout(closeModal, 3200);
+    e.preventDefault(); modalForm.style.display = 'none';
+    modalSucc.classList.add('show'); setTimeout(closeModal, 3500);
   });
 
-  // COMMERCIAL FORM
-  const commForm  = document.getElementById('comm-form');
-  const commSucc  = document.getElementById('comm-success');
-  commForm.addEventListener('submit', e => {
-    e.preventDefault();
-    commForm.style.display = 'none';
-    commSucc.classList.add('show');
+  // ============================================================
+  // FAQ ACCORDION
+  // ============================================================
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
   });
 
+  // ============================================================
   // CONTACT FORM
-  const contactForm = document.getElementById('contact-form');
-  const contactSucc = document.getElementById('contact-success');
-  contactForm.addEventListener('submit', e => {
+  // ============================================================
+  document.getElementById('contact-form').addEventListener('submit', e => {
     e.preventDefault();
-    contactForm.style.display = 'none';
-    contactSucc.classList.add('show');
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('contact-success').classList.add('show');
+  });
+
+  // ============================================================
+  // COMMERCIAL FORM
+  // ============================================================
+  document.getElementById('comm-form').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('comm-form').style.display = 'none';
+    document.getElementById('comm-success').classList.add('show');
+  });
+
+  // ============================================================
+  // SMOOTH SCROLL FOR NAV LINKS
+  // ============================================================
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Book Quote button pre-fills contact form and scrolls to it
+  document.querySelectorAll('[href="#contact"]').forEach(a => {
+    a.addEventListener('click', () => {
+      const svcText = calcSvc.options[calcSvc.selectedIndex]?.text || '';
+      const msgField = document.getElementById('c-msg');
+      if (msgField && svcText && svcText !== 'Choose a service...') {
+        const base = parseInt(calcSvc.value) || 0;
+        const addonSum = [...addons].filter(a => a.checked).reduce((s,a) => s + parseInt(a.dataset.price), 0);
+        const total = discOn ? (base + addonSum) - Math.round((base + addonSum) * 0.15) : (base + addonSum);
+        if (base) msgField.value = `Interested in: ${svcText.split('(')[0].trim()}${discOn ? ' (15% discount applied)' : ''} — Est. total: $${total}`;
+      }
+    });
   });
 </script>
 </body>
